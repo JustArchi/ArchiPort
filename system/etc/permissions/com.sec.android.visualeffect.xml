@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="com.sec.android.visualeffect" file="/system/framework/com.sec.android.visualeffect.jar"/>
+</permissions>
