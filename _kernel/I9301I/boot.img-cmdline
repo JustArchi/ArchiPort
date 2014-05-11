@@ -1,0 +1,1 @@
+console=null androidboot.console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37

@@ -1,0 +1,255 @@
+/dev/null                 0666   root       root
+/dev/zero                 0666   root       root
+/dev/full                 0666   root       root
+/dev/ptmx                 0666   root       root
+/dev/tty                  0666   root       root
+/dev/random               0666   root       root
+/dev/urandom              0666   root       root
+/dev/ashmem               0666   root       root
+/dev/binder               0666   root       root
+/dev/tima                 0666   root       root
+/dev/ovr*                 0664   root       root
+
+# Anyone can read the logs, but if they're not in the "logs"
+# group, then they'll only see log entries for their UID.
+/dev/log/*                0666   root       log
+
+# the msm hw3d client device node is world writable/readable
+/dev/msm_hw3dc            0666   root       root
+
+# gpu driver for adreno200 is globally accessible
+/dev/kgsl                 0666   root       root
+
+# kms driver for drm based gpu
+/dev/dri/*                0666   root       graphics
+
+# these should not be world writable
+/dev/diag                 0660   radio      radio
+/dev/diag_arm9            0660   radio      radio
+/dev/android_adb          0660   adb        adb
+/dev/android_adb_enable   0660   adb        adb
+/dev/ttyMSM0              0600   bluetooth  bluetooth
+/dev/uhid                 0660   system     net_bt_stack
+/dev/uinput               0660   system     net_bt_stack
+/dev/alarm                0664   system     radio
+/dev/tty0                 0660   root       system
+/dev/graphics/*           0660   system     graphics
+/dev/msm_hw3dm            0660   system     graphics
+/dev/input/*              0660   root       input
+/dev/eac                  0660   root       audio
+/dev/cam                  0660   root       camera
+/dev/pmem                 0660   system     graphics
+/dev/pmem_adsp*           0660   system     audio
+/dev/pmem_camera*         0660   system     camera
+/dev/oncrpc/*             0660   root       system
+/dev/adsp/*               0660   system     audio
+/dev/snd/*                0660   system     audio
+/dev/mt9t013              0660   system     system
+/dev/msm_camera/*         0660   system     system
+/dev/akm8976_daemon       0640   compass    system
+/dev/akm8976_aot          0640   compass    system
+/dev/akm8973_daemon       0640   compass    system
+/dev/akm8973_aot          0640   compass    system
+/dev/bma150               0640   compass    system
+/dev/cm3602               0640   compass    system
+/dev/akm8976_pffd         0640   compass    system
+/dev/lightsensor          0640   system     system
+/dev/msm_pcm_out*         0660   system     audio
+/dev/msm_pcm_in*          0660   system     audio
+/dev/msm_pcm_ctl*         0660   system     audio
+/dev/msm_snd*             0660   system     audio
+/dev/msm_mp3*             0660   system     audio
+/dev/audience_a1026*      0660   system     audio
+/dev/tpa2018d1*           0660   system     audio
+/dev/msm_audpre           0660   system     audio
+/dev/msm_audio_ctl        0660   system     audio
+/dev/htc-acoustic         0660   system     audio
+/dev/vdec                 0660   system     audio
+/dev/qseecom              0660   system     drmrpc
+/dev/q6venc               0660   system     audio
+/dev/snd/dsp              0660   system     audio
+/dev/snd/dsp1             0660   system     audio
+/dev/snd/mixer            0660   system     audio
+/dev/smd0                 0640   radio      radio
+/dev/smd11                0660   radio      radio
+/dev/qmi                  0640   radio      radio
+/dev/qmi0                 0640   radio      radio
+/dev/qmi1                 0640   radio      radio
+/dev/qmi2                 0640   radio      radio
+/dev/bus/usb/*            0660   root       usb
+/dev/mtp_usb              0660   root       mtp
+/dev/usb_accessory        0660   root       usb
+/dev/tun                  0660   system     vpn
+/dev/vfsspi               0660   system     system
+/dev/url                  0660   secnetfilter    secnetfilter
+
+
+
+# CDMA radio interface MUX
+/dev/ts0710mux*           0640   radio      radio
+/dev/ppp                  0660   radio      vpn
+
+# for usb printer
+/dev/bus/usb/*         0660        system        usb
+/dev/usb/lp*           0660        system        usb
+
+#permission for dun
+/dev/dun               0660   system     system
+
+# for PL2303 driver
+/dev/ttyUSB*           0660   system     usb
+
+# EFS
+/dev/block/mmcblk0p11	  0660	 system		system
+
+# sysfs properties
+/sys/devices/virtual/input/input*   enable      0660  root   input
+/sys/devices/virtual/input/input*   delay	   0660  root   input
+/sys/devices/virtual/input/input*   poll_delay  0660  root   input
+/sys/devices/virtual/input/input*   flush  0660  root   input
+/sys/devices/virtual/usb_composite/*   enable      0664  root   system
+/sys/devices/f9924000.i2c/i2c-2/2-0020/input/input*   enabled     0660  system  system
+/sys/devices/f9924000.i2c/i2c-2/2-0049/input/input*   enabled     0660  system  system
+
+# sensorhub
+/dev/ssp_sensorhub        0660   system     system
+/dev/iio:device*		  0660	 system	system
+/sys/devices/f9967000.spi/spi_master/spi32766/spi32766.0/iio:device*   buffer/enable 0660	  system	system
+/sys/devices/f9967000.spi/spi_master/spi32766/spi32766.0/iio:device*   buffer/length 0660	  system	system
+/sys/devices/f9967000.spi/spi_master/spi32765/spi32765.0/iio:device*   buffer/enable 0660	  system	system
+/sys/devices/f9967000.spi/spi_master/spi32765/spi32765.0/iio:device*   buffer/length 0660	  system	system
+/sys/devices/f9967000.spi/spi_master/spi11/spi11.0/iio:device*   buffer/enable 0660	  system	system
+/sys/devices/f9967000.spi/spi_master/spi11/spi11.0/iio:device*   buffer/length 0660	  system	system
+
+#Accelerometer sensor
+/sys/devices/f9925000.i2c/i2c-0/0-0018/input/input*   enable     0664  system  system
+/sys/devices/f9925000.i2c/i2c-0/0-0018/input/input*   delay     0664  system  system
+/sys/devices/i2c.73/i2c-16/16-0018/input/input* enable    0664  system  system
+/sys/devices/i2c.73/i2c-16/16-0018/input/input* delay     0664  system  system
+
+# sysfs iio event
+/sys/devices/f9927000.i2c/i2c-5/5-0024/iio:device*										0664   system     radio
+/sys/devices/f9927000.i2c/i2c-5/5-0024/iio:device* enable								0660   system     radio
+/sys/devices/f9927000.i2c/i2c-5/5-0024/iio:device* in_grip0_input						0660   system     radio
+
+
+/sys/devices/f9927000.i2c/i2c-5/5-0039/iio:device*										0664   system     radio
+/sys/devices/f9927000.i2c/i2c-5/5-0039/iio:device* enable								0660   system     radio
+/sys/devices/f9927000.i2c/i2c-5/5-0039/iio:device* prox_enable							0660   system     radio
+/sys/devices/f9927000.i2c/i2c-5/5-0039/iio:device* delay								0660   system     radio
+/sys/devices/f9927000.i2c/i2c-5/5-0039/iio:device* prox_delay							0660   system     radio
+/sys/devices/f9927000.i2c/i2c-5/5-0039/iio:device* in_illuminance0_input				0660   system     radio
+/sys/devices/f9927000.i2c/i2c-5/5-0039/iio:device* in_proximity0_input					0660   system     radio
+
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* uevent								0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* dev								0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* buffer/length						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* buffer/enable						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* scan_elements/in_timestamp_en		0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* scan_elements/in_timestamp_type	0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* scan_elements/in_timestamp_index	0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* sampling_frequency_available		0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* reg_dump							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* temperature						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_scale					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_x_calibbias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_y_calibbias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_z_calibbias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_x_offset				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_y_offset				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_z_offset				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_self_test_scale			0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* self_test_samples					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* self_test_threshold				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* gyro_enable						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* gyro_fifo_enable					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* gyro_rate							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* power_state						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* sampling_frequency					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* self_test							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* gyro_matrix						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* secondary_name						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* reg_write							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* debug_smd_enable_testp1			0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* debug_smd_enable_testp2			0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* debug_smd_exe_state				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* debug_smd_delay_cntr				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* test_suspend_resume				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* test_gyro_counter					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* test_accel_counter					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* test_compass_counter				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* test_pressure_counter				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* test_LPQ_counter					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* test_PEDQ_counter					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* test_SIXQ_counter					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* event_display_orientation			0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* event_accel_motion					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* event_smd							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* event_pedometer					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_scale						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_x_calibbias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_y_calibbias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_z_calibbias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_self_test_scale			0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_x_offset					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_y_offset					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_z_offset					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_x_dmp_bias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_y_dmp_bias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_accel_z_dmp_bias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_x_dmp_bias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_y_dmp_bias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_anglvel_z_dmp_bias				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* pedometer_int_on					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* pedometer_on						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* pedometer_steps					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* pedometer_time						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* smd_enable							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* smd_threshold						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* smd_delay_threshold				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* smd_delay_threshold2				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* display_orientation_on				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* dmp_on								0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* dmp_int_on							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* dmp_event_int_on					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* step_indicator_on					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* batchmode_timeout					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* batchmode_wake_fifo_full_on		0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* six_axes_q_on						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* six_axes_q_rate					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* three_axes_q_on					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* three_axes_q_rate					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* ped_q_on							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* ped_q_rate							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* step_detector_on					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* motion_lpa_on						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* motion_lpa_freq					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* motion_lpa_threshold				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* accel_enable						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* accel_fifo_enable					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* firmware_loaded					0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* accel_matrix						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* accel_rate							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* in_magn_scale						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* compass_enable						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* compass_rate						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* compass_matrix						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* compass_sens						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* name								0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* trigger/current_trigger			0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* power/runtime_status				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* power/control						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* power/runtime_suspended_time		0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* power/runtime_active_time			0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* power/autosuspend_delay_ms			0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* dmp_firmware						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* event_tap							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* flush_batch						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* master_enable						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* tap_min_count						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* tap_on								0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* tap_threshold						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* tap_time							0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* dmp_firmware						0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* pedometer_int_thresh				0660   system     radio
+/sys/devices/f9968000.i2c/i2c-12/12-0068/iio:device* pedometer_step_thresh				0660   system     radio

@@ -1,0 +1,19 @@
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+#TODO: Add 'check' as fs_mgr_flags with data partition.
+# Currently we dont have e2fsck compiled. So fs check would failed.
+
+#<src>                                                <mnt_point>  <type>  <mnt_flags and options>                     <fs_mgr_flags>
+/dev/block/platform/msm_sdcc.1/by-name/system         /system      ext4    ro,errors=panic                               wait
+/dev/block/platform/msm_sdcc.1/by-name/userdata       /data        ext4    nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic     wait,check,encryptable=footer
+
+# VOLD
+/devices/msm_sdcc.2/mmc_host/mmc1/			auto 					vfat	default		voldmanaged=extSdCard:auto,noemulatedsd
+/devices/platform/msm_hsusb_host/usb1*sda,/devices/platform/msm_hsusb_host/usb2*sda            auto                    vfat    default     voldmanaged=UsbDriveA:auto
+/devices/platform/msm_hsusb_host/usb1*sdb,/devices/platform/msm_hsusb_host/usb2*sdb             auto                    vfat    default     voldmanaged=UsbDriveB:auto
+/devices/platform/msm_hsusb_host/usb1*sdc,/devices/platform/msm_hsusb_host/usb2*sdc            auto                    vfat    default     voldmanaged=UsbDriveC:auto
+/devices/platform/msm_hsusb_host/usb1*sdd,/devices/platform/msm_hsusb_host/usb2*sdd            auto                    vfat    default     voldmanaged=UsbDriveD:auto
+/devices/platform/msm_hsusb_host/usb1*sde,/devices/platform/msm_hsusb_host/usb2*sde            auto                    vfat    default     voldmanaged=UsbDriveE:auto
+/devices/platform/msm_hsusb_host/usb1*sdf,/devices/platform/msm_hsusb_host/usb2*sdf          auto                    vfat    default     voldmanaged=UsbDriveF:auto
