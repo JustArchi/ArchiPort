@@ -1,0 +1,4 @@
+#!/system/bin/sh
+logcat >/data/logcat.txt 2>&1 &
+#wait
+exit 0
