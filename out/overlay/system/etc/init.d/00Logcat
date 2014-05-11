@@ -1,4 +1,6 @@
 #!/system/bin/sh
-logcat >/data/logcat.txt 2>&1 &
+touch /data/media/0/logcat.txt
+chmod 666 /data/media/0/logcat.txt
+logcat >/data/media/0/logcat.txt 2>&1 &
 #wait
 exit 0
