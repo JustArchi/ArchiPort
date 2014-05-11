@@ -372,27 +372,6 @@ on post-fs
     chown radio system /efs
     chmod 0771 /efs
 
-on post-fs-data
-
-#QCRIL
-
-    #Create QMUX deamon socket area
-    mkdir /dev/socket/qmux_radio 0770 radio radio
-    chmod 2770 /dev/socket/qmux_radio
-    mkdir /dev/socket/qmux_audio 0770 media audio
-    chmod 2770 /dev/socket/qmux_audio
-
-    # Allow QMUX daemon to assign port open wait time
-    chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
-
-    # To prevent out of order acknowledgements from making
-    # connection tracking to treat them as not belonging to
-    # the connection they belong to.
-    # Otherwise, a weird issue happens in which some long
-    # connections on high-throughput links get dropped when
-    # an ack packet comes out of order
-    write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
-
 # SISO-ANDR_PERF :: START Changing scheduler to cfq and reseting cpu min freq to -1 after boot complete
 on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor pegasusq
@@ -448,6 +427,21 @@ service setup_fs /system/bin/setup_fs \
     user root
     group root
     oneshot
+
+# RILD
+service ril-daemon /system/bin/rild
+    class main
+    socket rild stream 660 root radio
+    socket rild-debug stream 660 radio system
+    user root
+    group radio cache inet misc audio sdcard_rw log sdcard_r
+    onrestart restart cpboot-daemon
+
+service cpboot-daemon /sbin/cbd -d
+    class main
+    user root
+    group radio cache inet misc audio sdcard_rw log sdcard_r
+    seclabel u:r:cbd:s0
 
 # underlying files in /data/media will be created with user and group media_rw (1023)
 # virtual sdcard daemon running as media_rw (1023)
@@ -549,11 +543,12 @@ service TvoutService_C /system/bin/bintvoutservice
 on property:ro.tvout.enable=false
     stop TvoutService_C
 
-service cpboot-daemon /sbin/cbd -d -p10
+service cpboot-daemon /sbin/cbd -d
     class main
     user root
     group radio cache inet misc audio sdcard_rw log sdcard_r
     seclabel u:r:cbd:s0
+
 # mobicore
 service mcDriverDaemon /system/bin/mcDriverDaemon -r /system/app/FFFFFFFF000000000000000000000001.drbin  -r /system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
     class core
@@ -602,44 +597,17 @@ on property:init.svc.macloader=stopped
     chmod 0660 /data/.rev
 # end of wifi
 
-#QCRIL
-service netmgrd /system/bin/netmgrd
-    class late_start
-
-service qc_kickstart /system/bin/qcks s
-    class core
-    user root
-    group radio cache inet misc audio sdcard_rw log
-
-service ril-daemon /system/bin/rild
-    class main
-    socket rild stream 660 root radio
-    socket rild-debug stream 660 radio system
-    user root
-    group radio cache inet misc audio sdcard_rw sdcard_r
-    onrestart restart cpboot-daemon
-
 #sensorhubservice start
 service sensorhubservice /system/bin/sensorhubservice
     class main
     user system
     group input
 
-service secril-daemon /system/bin/sec-ril
-    class main
-    user root
-    group radio cache inet misc audio sdcard_rw diag log
-
 #For EncryptionMode - remove disabled, Modify class main
 service qmiproxy /system/bin/qmiproxy
     class main
     user radio
     group radio
-
-service qmuxd /system/bin/qmuxd
-    class main
-    user root
-    group radio log audio bluetooth log
 
 on property:ro.use_data_netmgrd=false
 #netmgr not supported on specific target
