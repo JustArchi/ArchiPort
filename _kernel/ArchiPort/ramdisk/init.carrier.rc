@@ -1,0 +1,28 @@
+
+on boot
+
+# VMware BEGIN
+# VMware MVP feature list (generated)
+    setprop ro.mvp.features	srvc,mvpdsec,ftx,grbks,vpn 
+# VMware END
+
+#InsideSecure VPN Client
+service vpnclientpm /system/bin/vpnclientpm -u 1000 -g 1000 \
+     -O /data/data/com.ipsec.service/vpnclientpm.txt \
+     -U rmnet,rmnet_usb,wlan,bt-pan,rndis,p2p,eth
+      socket vpnclientpm seqpacket 0600 system system
+      disabled
+on property:service.vpnclientpm.enable=1
+      start vpnclientpm
+on property:service.vpnclientpm.enable=0
+      stop vpnclientpm
+
+	
+# VMware BEGIN
+# VMware MVP Hypervisor daemon
+# DO NOT REMOVE THIS COMMENT MVP_FEATURE_srvc
+service mvpd /system/bin/mvpd -F -a 14
+    class main
+    user root
+    disabled
+# VMware END	
