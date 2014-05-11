@@ -10,6 +10,9 @@ import /init.${ro.hardware}.rc
 import /init.trace.rc
 import /init.container.rc
 
+on property:sys.boot_completed=1
+    write /sys/power/cpufreq_min_limit -1
+
 on early-init
     # Set init and its forked children's oom_adj.
     write /proc/1/oom_adj -16
@@ -24,8 +27,11 @@ on early-init
     mkdir /mnt 0775 root system
 
 # Allow system UID to setenforce and set booleans.
+    chown system system /selinux/enforce
     chown system system /sys/fs/selinux/enforce
+    chown -R system system /selinux/booleans
     chown -R system system /sys/fs/selinux/booleans
+    chown system system /selinux/commit_pending_bools
     chown system system /sys/fs/selinux/commit_pending_bools
 
 on init
@@ -34,6 +40,17 @@ sysclktz 0
 
 loglevel 3
 
+# setup the global environment
+    export PATH /sbin:/vendor/bin:/system/sbin:/system/bin:/system/xbin
+    export LD_LIBRARY_PATH /vendor/lib:/system/lib
+    export ANDROID_BOOTLOGO 1
+    export ANDROID_ROOT /system
+    export ANDROID_ASSETS /system/app
+    export ANDROID_DATA /data
+    export ANDROID_STORAGE /storage
+    export ASEC_MOUNTPOINT /mnt/asec
+    export LOOP_MOUNTPOINT /mnt/obb
+    export BOOTCLASSPATH /system/framework/core.jar:/system/framework/core-junit.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/framework2.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/mms-common.jar:/system/framework/android.policy.jar:/system/framework/services.jar:/system/framework/apache-xml.jar:/system/framework/sec_edm.jar:/system/framework/seccamera.jar:/system/framework/scrollpause.jar:/system/framework/stayrotation.jar:/system/framework/smartfaceservice.jar:/system/framework/sc.jar:/system/framework/secocsp.jar:/system/framework/commonimsinterface.jar
 # for audit message 
     chown system system /proc/avc_msg
     chmod 0660 /proc/avc_msg

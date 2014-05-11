@@ -419,7 +419,7 @@ on property:sys.boot_completed=1
 #   oneshot
 
 #on property:persist.sys.storage_preload=1
-#   mount ext4 /dev/block/mmcblk0p14 /preload nosuid nodev noatime wait ro
+#   mount ext4 /dev/block/mmcblk0p10 /preload nosuid nodev noatime wait ro
 #   setprop storage.preload.complete 1
 
 #on property:persist.sys.storage_preload=0
@@ -728,7 +728,7 @@ on property:ro.securestorage.knox=true
 	
 # LPM
 on property:ro.bootmode=charger
-    mount ext4 /dev/block/mmcblk0p13 /system wait ro
+    mount ext4 /dev/block/mmcblk0p9 /system wait ro
 
 on property:ro.bootmode=charger
     class_start sec-charger

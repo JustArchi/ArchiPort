@@ -19,6 +19,7 @@
 # Empty directories
 /lost\+found		u:object_r:rootfs:s0
 /proc			u:object_r:rootfs:s0
+/sys			u:object_r:rootfs:s0
 
 # SELinux policy files
 /file_contexts		u:object_r:rootfs:s0
@@ -30,6 +31,7 @@
 # Devices
 #
 /dev(/.*)?		u:object_r:device:s0
+/dev/akm8973.*		u:object_r:akm_device:s0
 /dev/accelerometer	u:object_r:sensors_device:s0
 /dev/alarm		u:object_r:alarm_device:s0
 /dev/android_adb.*	u:object_r:adb_device:s0
@@ -39,6 +41,7 @@
 /dev/block(/.*)?	u:object_r:block_device:s0
 /dev/block/loop[0-9]*	u:object_r:loop_device:s0
 /dev/block/ram[0-9]*	u:object_r:ram_device:s0
+/dev/block/mtdblock5	u:object_r:radio_device:s0
 /dev/bus/usb(.*)?       u:object_r:usb_device:s0
 /dev/cam		u:object_r:camera_device:s0
 /dev/console		u:object_r:console_device:s0
@@ -72,11 +75,16 @@
 /dev/random		u:object_r:random_device:s0
 /dev/rpmsg-omx[0-9]	u:object_r:rpmsg_device:s0
 /dev/rproc_user	u:object_r:rpmsg_device:s0
+/dev/s3c-jpg		u:object_r:camera_device:s0
+/dev/s3c-mem		u:object_r:camera_device:s0
+/dev/s3c-mfc		u:object_r:graphics_device:s0
 /dev/snd(/.*)?		u:object_r:audio_device:s0
 /dev/snd/pcmC[0-9]*D[0-9]*c u:object_r:audio_capture_device:s0
 /dev/socket(/.*)?		u:object_r:socket_device:s0
 /dev/socket/adbd	u:object_r:adbd_socket:s0
 /dev/socket/bluetooth	u:object_r:bluetooth_socket:s0
+/dev/socket/dbus_bluetooth	u:object_r:bluetooth_socket:s0
+/dev/socket/dbus	u:object_r:dbus_socket:s0
 /dev/socket/dnsproxyd	u:object_r:dnsproxyd_socket:s0
 /dev/socket/gps		u:object_r:gps_socket:s0
 /dev/socket/installd	u:object_r:installd_socket:s0
@@ -116,6 +124,7 @@
 #
 /system(/.*)?		u:object_r:system_file:s0
 /system/bin/auditd	u:object_r:auditd_exec:s0
+/system/bin/ash		u:object_r:shell_exec:s0
 /system/bin/mksh	u:object_r:shell_exec:s0
 /system/bin/sh		--	u:object_r:shell_exec:s0
 /system/bin/run-as	--	u:object_r:runas_exec:s0
@@ -127,9 +136,11 @@
 /system/bin/netd	u:object_r:netd_exec:s0
 /system/bin/rild	u:object_r:rild_exec:s0
 /system/bin/mediaserver	u:object_r:mediaserver_exec:s0
+/system/bin/dbus-daemon	u:object_r:dbusd_exec:s0
 /system/bin/installd	u:object_r:installd_exec:s0
 /system/bin/keystore	u:object_r:keystore_exec:s0
 /system/bin/debuggerd	u:object_r:debuggerd_exec:s0
+/system/bin/bluetoothd	u:object_r:bluetoothd_exec:s0
 /system/bin/wpa_supplicant	u:object_r:wpa_exec:s0
 /system/bin/qemud	u:object_r:qemud_exec:s0
 /system/bin/sdcard      u:object_r:sdcardd_exec:s0
@@ -168,9 +179,11 @@
 /data/app-private/vmdl.*\.tmp	u:object_r:apk_private_tmp_file:s0
 /data/tombstones(/.*)?	u:object_r:tombstone_data_file:s0
 /data/local/tmp(/.*)?	u:object_r:shell_data_file:s0
+/data/local/tmp/selinux(/.*)?   u:object_r:tombstone_data_file:s0
 # Misc data
 /data/misc/audio(/.*)?          u:object_r:audio_data_file:s0
 /data/misc/audit(/.*)?		u:object_r:audit_log:s0
+/data/misc/bluetoothd(/.*)?	u:object_r:bluetoothd_data_file:s0
 /data/misc/bluetooth(/.*)?	u:object_r:bluetooth_data_file:s0
 /data/misc/bluedroid(/.*)?	u:object_r:bluetooth_data_file:s0
 /data/misc/keystore(/.*)?	u:object_r:keystore_data_file:s0
@@ -179,6 +192,7 @@
 /data/misc/systemkeys(/.*)?	u:object_r:systemkeys_data_file:s0
 /data/misc/wifi(/.*)?		u:object_r:wifi_data_file:s0
 /data/misc/camera(/.*)?	u:object_r:camera_data_file:s0
+#/data/misc/camera(/.*)?	u:object_r:camera_calibration_file:s0
 /data/misc/dhcp(/.*)?           u:object_r:dhcp_data_file:s0
 /data/misc/adb(/.*)?            u:object_r:adb_keys_file:s0
 # App sandboxes
