@@ -23,13 +23,10 @@ on init
     mkdir /mnt 0775 root root
     #mount /tmp /tmp tmpfs   
 
-    write /proc/sys/kernel/hung_task_timeout_secs 0
-
 on early-fs
 	insmod /lib/modules/vibrator.ko
-
+ 
     mount ext4 /dev/block/mmcblk0p9 /system ro wait noatime
-
 	mkdir /data/log 0777
 
 	chmod 0666 /dev/log/radio
