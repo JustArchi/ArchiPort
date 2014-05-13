@@ -1,0 +1,1521 @@
+Binary files N7100_4.3/boot.img-ramdisk.gz and N7100_4.4.2/boot.img-ramdisk.gz differ
+Binary files N7100_4.3/boot.img-zImage and N7100_4.4.2/boot.img-zImage differ
+diff -r N7100_4.3/ramdisk/file_contexts N7100_4.4.2/ramdisk/file_contexts
+22d21
+< /sys			u:object_r:rootfs:s0
+36d34
+< /dev/alps_io		u:object_r:input_device:s0
+49a48
+> /dev/fscklogs(/.*)?	u:object_r:fscklogs:s0
+53c52
+< /dev/input/uinput	u:object_r:uinput_device:s0
+---
+> /dev/hw_random		u:object_r:hw_random_device:s0
+60d58
+< /dev/misc/uinput        u:object_r:uinput_device:s0
+65a64
+> /dev/pn544		u:object_r:nfc_device:s0
+70a70,71
+> /dev/nvmap              u:object_r:nv_device:s0
+> /dev/nvhost-.*          u:object_r:nv_device:s0
+74d74
+< /dev/smdcnt_rev[0-9]*	u:object_r:radio_device:s0
+80,81d79
+< /dev/socket/dbus_bluetooth	u:object_r:bluetooth_socket:s0
+< /dev/socket/dbus	u:object_r:dbus_socket:s0
+96a95,96
+> /dev/spdif_out.*	u:object_r:audio_device:s0
+> /dev/tegra.*		u:object_r:video_device:s0
+103c103
+< /dev/uinput		u:object_r:uinput_device:s0
+---
+> /dev/uinput		u:object_r:uhid_device:s0
+118d117
+< /system/bin/ash		u:object_r:shell_exec:s0
+131,132d129
+< /system/bin/dnsmasq     u:object_r:dnsmasq_exec:s0
+< /system/bin/dbus-daemon	u:object_r:dbusd_exec:s0
+136d132
+< /system/bin/bluetoothd	u:object_r:bluetoothd_exec:s0
+145d140
+< /system/bin/hostapd     u:object_r:hostapd_exec:s0
+150a146,153
+> /system/bin/dnsmasq     u:object_r:dnsmasq_exec:s0
+> /system/bin/hostapd     u:object_r:hostapd_exec:s0
+> /system/bin/clatd	u:object_r:clatd_exec:s0
+> #############################
+> # Vendor files
+> #
+> /vendor(/.*)?		u:object_r:system_file:s0
+> /vendor/bin/gpsd	u:object_r:gpsd_exec:s0
+168a172
+> /data/misc/audio(/.*)?          u:object_r:audio_data_file:s0
+170d173
+< /data/misc/bluetoothd(/.*)?	u:object_r:bluetoothd_data_file:s0
+173a177
+> /data/misc/media(/.*)?		u:object_r:media_data_file:s0
+206a211
+> /sys/devices/system/cpu(/.*)?    u:object_r:sysfs_devices_system_cpu:s0
+213d217
+< 
+230a235,236
+> /dev/block/platform/msm_sdcc.1/by-name/param		u:object_r:emmcblk_device:s0
+> /dev/block/vnswap0		u:object_r:swap_device:s0
+240c246,247
+< /dev/pn544		u:object_r:nfc_device:s0
+---
+> #fix build error - duplicate definition
+> #/dev/pn544		u:object_r:nfc_device:s0
+244a252
+> /dev/socket/dumpstate	u:object_r:dumpstate_socket:s0
+247a256,259
+> /dev/socket/drsd        u:object_r:drsd_socket:s0
+> /dev/socket/epm     u:object_r:epm_socket:s0
+> /dev/socket/rild[0-9]*	u:object_r:rild_socket:s0
+> /dev/socket/rild-debug[0-9]* u:object_r:rild_debug_socket:s0
+258a271,274
+> /dev/block/mmcblk0p[0-9]*    u:object_r:emmcblk_device:s0
+> /dev/block/mmcblk[0-9]*	   u:object_r:emmcblk_device:s0
+> /dev/block/mmcblk1p.*   u:object_r:emmcblk_device:s0
+> /dev/block/mmcblk1p1    u:object_r:emmcblk_device:s0
+270a287
+> /system/bin/actlmand	u:object_r:actlmand_exec:s0
+277a295,296
+> /system/bin/cellgeofenced	u:object_r:cellgeofenced_exec:s0
+> /system/bin/charon	u:object_r:charon_exec:s0
+278a298
+> /system/bin/createsystemfile	u:object_r:createsystemfile_exec:s0
+281a302
+> /system/bin/drsd        u:object_r:drsd_exec:s0
+284a306
+> /system/bin/edmaudit	u:object_r:edmaudit_exec:s0
+285a308
+> /system/bin/icd	u:object_r:icd_exec:s0
+286a310,313
+> /system/bin/imsqmidaemon	u:object_r:imsqmidaemon_exec:s0
+> /system/bin/insthk	u:object_r:insthk_exec:s0
+> /system/bin/ipruleset	u:object_r:ipruleset_exec:s0
+> /system/bin/IPSecService	u:object_r:IPSecService_exec:s0
+289a317
+> /system/bin/mdnsd	u:object_r:mdnsd_exec:s0
+292a321,322
+> /system/bin/prepare_param.sh	u:object_r:prepare_param_sh_file:s0
+> /system/bin/rfs_access	u:object_r:rfs_access_exec:s0
+296a327,330
+> /system/bin/selinux-network.sh	u:object_r:selinux_net_exec:s0
+> /system/bin/ss_conn_daemon	u:object_r:ss_conn_daemon_exec:s0
+> /system/bin/sshd	u:object_r:sshd_exec:s0
+> /system/bin/sysmon	u:object_r:sysmon_exec:s0
+298a333
+> /system/bin/wcnss_service	u:object_r:wcnss_service_exec:s0
+299a335,336
+> /system/etc/install-recovery.sh	u:object_r:flash_recovery_sh_file:s0
+> 
+301a339
+> 
+314a353
+> /data/data/imsqmisocket	u:object_r:system_data_file:s0
+321c360,361
+< /data/misc/audio(/.*)?	u:object_r:audio_data_file:s0
+---
+> #fix build error - duplicate definition
+> #/data/misc/audio(/.*)?	u:object_r:audio_data_file:s0
+326a367,369
+> /data/clipboard1[0-9][0-9](/.*)?  u:object_r:knox_clipboard_file:s0
+> /data/knox(/.*)?	u:object_r:container_app_data_backend:s0
+> /data/system/container(/.*)?	u:object_r:security_file:s0
+328c371,374
+< /data/personalpage(/.*)?	u:object_r:personal_page_file:s0
+---
+> # personalpage path is not used  by (hyojin45.son)
+> # /data/personalpage(/.*)?	u:object_r:personal_page_file:s0
+> # new path for personalpage is privatemode.K is first model for personalpage.
+> /data/privatemode(/.*)?	u:object_r:personal_page_file:s0
+358,359c404
+< /system/bin/smdexe      u:object_r:smdexe_exec:s0
+< /system/bin/ss_conn_daemon	u:object_r:ss_conn_daemon_exec:s0
+---
+> /system/bin/smdexe      u:object_r:smdexe_exec:s0 
+381c426
+< /dev/mali0		u:object_r:video_device:s0
+---
+> /dev/mali.*	u:object_r:video_device:s0
+389a435
+> /dev/seiren		u:object_r:seiren_device:s0
+406a453,486
+> #line 1 "vendor/samsung/common/sepolicy/vmware/file_contexts"
+> # VMware daemon
+> /system/bin/mvpd	u:object_r:vmwared_exec:s0
+> 
+> # Vmware device
+> /dev/mvpkm		u:object_r:vmware_device:s0
+> 
+> # VMWare sysfs
+> /sys/hypervisor(/.*)	u:object_r:sysfs_vmware_writable:s0
+> #line 1 "vendor/samsung/common/sepolicy/qcom_common/carrier_spr/file_contexts"
+> #### Kineto for secsprextension/java/com/oem/smartwifisupport
+> /dev/socket/cfiat  u:object_r:cfiat_socket:s0
+> /dev/socket/kipc   u:object_r:kipc_socket:s0
+> 
+> ############################# 
+> # ItsOn file
+> #
+> /system/vendor/itson(/.*)?  u:object_r:sprintitson_file:s0
+> #/vendor/app(/.*)?  u:object_r:sprintitson_file:s0
+> /carrier/itson(/.*)?  u:object_r:sprintitson_file:s0
+> #line 1 "vendor/samsung/common/sepolicy/slsi_common/QC_MDM/file_contexts"
+> # System
+> /system/bin/efsks     u:object_r:efsks_exec:s0
+> /system/bin/qcks      u:object_r:qcks_exec:s0
+> /system/bin/qmiproxy	u:object_r:qmiproxy_exec:s0
+> /system/bin/qmuxd     u:object_r:qmuxd_exec:s0
+> /system/bin/secstarter	u:object_r:secstarter_exec:s0
+> 
+> # Device
+> /dev/socket/qmux_audio	u:object_r:qmux_audio_socket:s0
+> /dev/socket/qmux_bluetooth(/.*)?	u:object_r:qmux_bluetooth_socket:s0
+> /dev/socket/qmux_gps	u:object_r:qmux_gps_socket:s0
+> /dev/socket/qmux_radio	u:object_r:qmux_radio_socket:s0
+> 
+413c493
+< /dev/mali 	u:object_r:graphics_device:s0
+---
+> /dev/mali* 	u:object_r:graphics_device:s0
+417,435d496
+< /dev/block/mmcblk0p1    u:object_r:botablk_device:s0
+< /dev/block/mmcblk0p10   u:object_r:radioblk_device:s0
+< /dev/block/mmcblk0p11   u:object_r:tombstoneblk_device:s0
+< /dev/block/mmcblk0p12   u:object_r:cacheblk_device:s0
+< /dev/block/mmcblk0p13   u:object_r:systemblk_device:s0
+< /dev/block/mmcblk0p14   u:object_r:hiddenblk_device:s0
+< /dev/block/mmcblk0p15   u:object_r:otablk_device:s0
+< /dev/block/mmcblk0p16   u:object_r:userdatablk_device:s0
+< /dev/block/mmcblk0p17   u:object_r:efsblk_device:s0
+< /dev/block/mmcblk0p18   u:object_r:radioblk_device:s0
+< /dev/block/mmcblk0p2    u:object_r:botablk_device:s0
+< /dev/block/mmcblk0p3    u:object_r:efsblk_device:s0
+< /dev/block/mmcblk0p4    u:object_r:m9kefsblk_device:s0
+< /dev/block/mmcblk0p5    u:object_r:m9kefsblk_device:s0
+< /dev/block/mmcblk0p6    u:object_r:m9kefsblk_device:s0
+< /dev/block/mmcblk0p7    u:object_r:paramblk_device:s0
+< /dev/block/mmcblk0p8    u:object_r:bootblk_device:s0
+< /dev/block/mmcblk0p9   u:object_r:recoveryblk_device:s0
+< 
+437,438d497
+< /dev/socket/rild2	u:object_r:rild_socket:s0
+< /dev/socket/rild-debug2	u:object_r:rild_debug_socket:s0
+Only in N7100_4.4.2/ramdisk: fstab.goldfish
+diff -r N7100_4.3/ramdisk/fstab.smdk4x12 N7100_4.4.2/ramdisk/fstab.smdk4x12
+5c5
+< 
+---
+> # data partition must be located at the bottom for supporting device encryption
+10,12c10,12
+< 
+< # data partition must be located at the bottom for supporting device encryption
+< /dev/block/mmcblk0p16    /data               ext4      nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check,encryptable=footer
+---
+> /dev/block/mmcblk0p14    /preload            ext4      ro,nosuid,nodev,noatime				wait
+> /dev/block/mmcblk0p16    /data               ext4      noatime,nosuid,nodev,discard,noauto_da_alloc,journal_async_commit,errors=panic    wait,check,encryptable=footer
+> /dev/block/mmcblk0p11    /tombstones         ext4      nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check
+15,21c15,21
+< /devices/platform/s3c-sdhci.2/mmc_host/mmc1/	/storage/extSdCard      vfat        default     voldmanaged=sdcard:auto
+< /devices/platform/s5p-ehci/usb1                 /storage/UsbDriveA      vfat        default     voldmanaged=sda:auto
+< /devices/platform/s5p-ehci/usb1                 /storage/UsbDriveB      vfat        default     voldmanaged=sdb:auto
+< /devices/platform/s5p-ehci/usb1                 /storage/UsbDriveC      vfat        default     voldmanaged=sdc:auto
+< /devices/platform/s5p-ehci/usb1                 /storage/UsbDriveD      vfat        default     voldmanaged=sdd:auto
+< /devices/platform/s5p-ehci/usb1                 /storage/UsbDriveE      vfat        default     voldmanaged=sde:auto
+< /devices/platform/s5p-ehci/usb1                 /storage/UsbDriveF      vfat        default     voldmanaged=sdf:auto
+\ No newline at end of file
+---
+> /devices/platform/s3c-sdhci.2/mmc_host/mmc1/			auto				vfat	default		voldmanaged=extSdCard:auto,noemulatedsd
+> /devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sda,/devices/platform/s5p-ehci/usb1*sda            auto                    vfat    default     voldmanaged=UsbDriveA:auto
+> /devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sdb,/devices/platform/s5p-ehci/usb1*sdb            auto                    vfat    default     voldmanaged=UsbDriveB:auto
+> /devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sdc,/devices/platform/s5p-ehci/usb1*sdc            auto                    vfat    default     voldmanaged=UsbDriveC:auto
+> /devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sdd,/devices/platform/s5p-ehci/usb1*sdd            auto                    vfat    default     voldmanaged=UsbDriveD:auto
+> /devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sde,/devices/platform/s5p-ehci/usb1*sde            auto                    vfat    default     voldmanaged=UsbDriveE:auto
+> /devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sdf,/devices/platform/s5p-ehci/usb1*sdf           auto                    vfat    default     voldmanaged=UsbDriveF:auto
+Binary files N7100_4.3/ramdisk/init and N7100_4.4.2/ramdisk/init differ
+Only in N7100_4.4.2/ramdisk: init.carrier.rc
+diff -r N7100_4.3/ramdisk/init.container.rc N7100_4.4.2/ramdisk/init.container.rc
+12a13,16
+> 	
+> on init
+>     mkdir /mnt/shell/container 0700 system system
+>     symlink /mnt/shell/container /storage/container
+15a20,22
+>     mkdir /data/container 0770 system system
+>     chown system system /data/container
+> 	
+25a33,38
+> service container /system/bin/sdcard -u 1000 -g 1000 -r /data/container /mnt/shell/container
+>     class late_start
+>     oneshot
+> 
+>     start container
+> 	
+Only in N7100_4.4.2/ramdisk: init.environ.rc
+Only in N7100_4.4.2/ramdisk: init.goldfish.rc
+diff -r N7100_4.3/ramdisk/init.rc N7100_4.4.2/ramdisk/init.rc
+6a7
+> import /init.environ.rc
+10,12c11
+< 
+< on property:sys.boot_completed=1
+<     write /sys/power/cpufreq_min_limit -1
+---
+> import /init.container.rc
+27d25
+< 
+29d26
+<     chown system system /selinux/enforce
+31d27
+<     chown -R system system /selinux/booleans
+33d28
+<     chown system system /selinux/commit_pending_bools
+42,52d36
+< # setup the global environment
+<     export PATH /sbin:/vendor/bin:/system/sbin:/system/bin:/system/xbin
+<     export LD_LIBRARY_PATH /vendor/lib:/system/lib
+<     export ANDROID_BOOTLOGO 1
+<     export ANDROID_ROOT /system
+<     export ANDROID_ASSETS /system/app
+<     export ANDROID_DATA /data
+<     export ANDROID_STORAGE /storage
+<     export ASEC_MOUNTPOINT /mnt/asec
+<     export LOOP_MOUNTPOINT /mnt/obb
+<     export BOOTCLASSPATH /system/framework/core.jar:/system/framework/core-junit.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/framework2.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/mms-common.jar:/system/framework/android.policy.jar:/system/framework/services.jar:/system/framework/apache-xml.jar:/system/framework/sec_edm.jar:/system/framework/seccamera.jar:/system/framework/scrollpause.jar:/system/framework/stayrotation.jar:/system/framework/smartfaceservice.jar:/system/framework/sc.jar:/system/framework/secocsp.jar:/system/framework/commonimsinterface.jar
+77,78c61,63
+<     mkdir /storage 0050 root sdcard_r
+< 
+---
+>     mkdir /mnt/media_rw 0700 media_rw media_rw
+>     mkdir /storage 0751 root sdcard_r
+>         
+90a76
+>     mount tmpfs tmpfs /mnt/secure/asec mode=0700,uid=0,gid=0
+113a100
+> 	write /proc/sys/net/ipv4/ping_group_range "0 2147483647"
+147c134
+< 
+---
+> 	
+155,158c142,145
+< #    mount ext4 /dev/block/mmcblk0p9 /system
+< #    mount ext4 /dev/block/mmcblk0p9 /system ro wait remount
+< #    mount ext4 /dev/block/mmcblk0p12 /data wait nosuid nodev noatime
+< #    mount ext4 /dev/block/mmcblk0p8 /cache nosuid nodev noatime
+---
+> #    mount ext4 /dev/block/mmcblk0p2 /system
+> #    mount ext4 /dev/block/mmcblk0p2 /system ro wait remount
+> #    mount ext4 /dev/block/mmcblk0p3 /data wait nosuid nodev noatime
+> #    mount ext4 /dev/block/mmcblk0p4 /cache nosuid nodev noatime
+165a153
+>     mount tmpfs tmpfs /mnt/secure/asec shared rec
+199c187
+<     # Reload SE Policy
+---
+>     # Reload SE Android Policy
+234d221
+<     mkdir /data/misc/radio 0775 radio system
+252,261d238
+<     # SA, System SW, SAMSUNG create log directory
+<     mkdir /data/log 0775 system log
+<     chown system log /data/log
+<     restorecon /data/log
+< 
+<     mkdir /data/anr 0755 system system
+<     restorecon /data/anr
+<     chmod 0775 /data/log
+<     chmod 0775 /data/anr
+< 
+278c255,257
+< #[ SEC_MM_DRM
+---
+>     # create directory for MediaDrm plug-ins - give drm the read/write access to
+>     # the following directory.
+>     mkdir /data/mediadrm 0770 mediadrm mediadrm
+280,286c259,266
+<     # [ save OMA DB, when upgrading from GB to ICS
+<     # belows will be removed at KLP
+<     mkdir /data/system/databases 0771 system system
+<     copy /data/data/com.sec.android.providers.drm/databases/drmdatabase.db /data/system/databases/drmdatabase.db
+<     chown system system /data/system/databases/drmdatabase.db
+<     chmod 0774 /data/system/databases/drmdatabase.db
+<     # ]
+---
+> # [ SEC_MM_DRM
+>     # sdrm
+>     mkdir /efs/drm 0774 drm system
+>     mkdir /efs/drm/sdrm 0774 drm system
+>     mkdir /efs/drm/sdrm/data_agent 0774 drm system
+>     restorecon /efs/drm
+>     restorecon /efs/drm/sdrm
+>     restorecon /efs/drm/data_agent
+318c298
+< 
+---
+> 	
+329a310
+>     
+331c312
+< #]
+---
+> # ]
+339,349c320,322
+< # MTP permission
+< 	chmod 0660 /dev/usb_mtp_gadget
+< 	chown system system /dev/usb_mtp_gadget
+< 
+< # terminal mode
+<     chmod 0660 /sys/class/android_usb/android0/terminal_version
+<     chown system system /sys/class/android_usb/android0/terminal_version
+< 
+< # sua version info
+<     chmod 0660 /sys/class/android_usb/android0/f_mass_storage/sua_version_info
+<     chown system system /sys/class/android_usb/android0/f_mass_storage/sua_version_info
+---
+>     # MTP permission
+>     chmod 0660 /dev/usb_mtp_gadget
+>     chown system mtp /dev/usb_mtp_gadget
+351,354c324
+<     # Set permission for Widevine DRM temporarily
+<     chmod 0644 /factory/wv.keys
+<     chmod 0755 /data/app/wv_test
+<     rm /data/app/tlcd_sock
+---
+>  	# Separate location for storing security policy files on data
+358a329,331
+>     mkdir /data/security/good 0700 system system
+>     mkdir /data/security/stig 0700 system system
+>     mkdir /data/security/mycontainer 0700 system system
+363,365d335
+< 	
+<     #Restorecon /tombstones
+<     restorecon -R /tombstones
+367,368c337,338
+<     # Restore context for /system at post-fs-data
+<     exec /system/bin/sh /init.selinux_restore.sh
+---
+> 	#Restorecon /tombstones
+>     restorecon -R /tombstones
+370,371c340,343
+< on boot
+<     mount debugfs /sys/kernel/debug /sys/kernel/debug
+---
+>     # Set permission for Widevine DRM temporarily
+>     chmod 0644 /factory/wv.keys
+>     chmod 0755 /data/app/wv_test
+>     rm /data/app/tlcd_sock
+376a349
+>     chmod 0660 /dev/s5p-smem    
+378a352,355
+>     chown system system /dev/s5p-smem  
+>     
+>     # Restore context for /system at post-fs-data
+>     selinux_restore -s
+380,381c357,362
+< # Camera
+<     mkdir /data/cfw 0775 system system
+---
+> on boot
+>     mount debugfs /sys/kernel/debug /sys/kernel/debug
+> 
+>     # Set up kernel tracing, but disable it by default
+>     chmod 0222 /sys/kernel/debug/tracing/trace_marker
+>     write /sys/kernel/debug/tracing/tracing_on 0
+387a369,371
+> #Camera
+>     mkdir /data/cfw 0775 system system
+> 
+420,465c404,418
+<     chown radio system /sys/power/cpufreq_table
+<     chown radio system /sys/power/cpufreq_max_limit
+<     chown radio system /sys/power/cpufreq_min_limit
+<     chown radio system /sys/power/gpu_lock
+<     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/max_cpu_lock
+<     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/min_cpu_lock
+<     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/cpucore_table
+<     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/hotplug_lock
+<     chown radio system /sys/devices/system/cpu/busfreq/curr_freq
+<     chown radio system /sys/devices/system/cpu/busfreq/dmc_max_threshold
+<     chown radio system /sys/devices/system/cpu/busfreq/min_freq
+<     chown radio system /sys/devices/system/cpu/busfreq/freq_table
+<     chown radio system /sys/module/mali/parameters/mali_dvfs_control
+<     chown system radio /sys/bus/platform/devices/s5p-tmu/lot_id
+<     chmod 0660 /sys/power/cpufreq_table
+<     chmod 0660 /sys/power/cpufreq_max_limit
+<     chmod 0660 /sys/power/cpufreq_min_limit
+<     chmod 0660 /sys/power/gpu_lock
+<     chmod 0660 /sys/class/power_supply/battery/siop_activated
+<     chmod 0660 /sys/class/power_supply/battery/siop_level
+<     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/max_cpu_lock
+<     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/min_cpu_lock
+<     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/cpucore_table
+<     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/hotplug_lock
+<     chmod 0660 /sys/devices/system/cpu/busfreq/curr_freq
+<     chmod 0660 /sys/devices/system/cpu/busfreq/dmc_max_threshold
+<     chmod 0660 /sys/devices/system/cpu/busfreq/min_freq
+<     chmod 0660 /sys/devices/system/cpu/busfreq/freq_table
+<     chmod 0660 /sys/module/mali/parameters/mali_dvfs_control
+<     chmod 0664 /sys/bus/platform/devices/s5p-tmu/lot_id
+< 
+< #    chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+< #    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+< #    chown system system /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+< #    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+< #    chown system system /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+< #    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+< #    chown system system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+< #    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+< #    chown system system /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+< #    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+< #    chown system system /sys/devices/system/cpu/cpufreq/interactive/boost
+< #    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/boost
+< #    chown system system /sys/devices/system/cpu/cpufreq/interactive/boostpulse
+< #    chown system system /sys/devices/system/cpu/cpufreq/interactive/input_boost
+< #    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/input_boost
+---
+>     chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+>     chown system system /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+>     chown system system /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+>     chown system system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+>     chown system system /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+>     chown system system /sys/devices/system/cpu/cpufreq/interactive/boost
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/boost
+>     chown system system /sys/devices/system/cpu/cpufreq/interactive/boostpulse
+>     chown system system /sys/devices/system/cpu/cpufreq/interactive/input_boost
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/input_boost
+498,511c451,452
+< # Permissions for touch
+<     chown system radio /sys/class/sec/tsp/cmd
+< 
+< # Permissions for WACOM
+<     chown system radio /sys/class/sec/sec_epen/epen_firm_update
+<     chown system radio /sys/class/sec/sec_epen/epen_rotation
+<     chown system radio /sys/class/sec/sec_epen/epen_hand
+<     chown system radio /sys/class/sec/sec_epen/epen_reset
+<     chown system radio /sys/class/sec/sec_epen/epen_reset_result
+<     chown system radio /sys/class/sec/sec_epen/epen_checksum
+<     chown system radio /sys/class/sec/sec_epen/epen_checksum_result
+<     chown system radio /sys/class/sec/sec_epen/epen_saving_mode
+< # Firmware update
+<     write /sys/class/sec/sec_epen/epen_firm_update R
+---
+> #permission for HDMI audio mute
+>     chown media audio /sys/class/hdmi_audio/hdmi_audio/hdmi_audio_set_ext
+513,514c454
+< # Permissions for Touchkey
+<     chown system radio /sys/class/sec/sec_touchkey/enable_disable
+---
+> #permission for touchkey	
+518d457
+<     chown system radio /sys/class/sec/sec_touchkey/touch_update
+526a466,480
+>     
+> # Permissions for touch
+>     chown system radio /sys/class/sec/tsp/cmd
+> 
+> # Permissions for EPEN
+>     chown system radio /sys/class/sec/sec_epen/epen_firm_update
+>     chown system radio /sys/class/sec/sec_epen/epen_rotation
+>     chown system radio /sys/class/sec/sec_epen/epen_hand
+>     chown system radio /sys/class/sec/sec_epen/epen_reset
+>     chown system radio /sys/class/sec/sec_epen/epen_reset_result
+>     chown system radio /sys/class/sec/sec_epen/epen_checksum
+>     chown system radio /sys/class/sec/sec_epen/epen_checksum_result
+>     chown system radio /sys/class/sec/sec_epen/epen_saving_mode
+>     chown system radio /sys/class/sec/sec_epen/boost_level
+>     write /sys/class/sec/sec_epen/epen_firm_update R
+530c484
+<     write /sys/class/sec/sec_key/wakeup_keys 116,172,544
+---
+>     write /sys/class/sec/sec_key/wakeup_keys 116,172
+531a486,488
+> # Set these so we can remotely update SELinux policy
+>     chown system system /sys/fs/selinux/load
+>     chown system system /sys/fs/selinux/enforce
+546,552c503
+< # Audio (Earjack)
+<     chown system radio /sys/class/audio/earjack/select_jack
+<     chown system radio /sys/class/audio/earjack/key_state
+<     chown system radio /sys/class/audio/earjack/state
+<     chown media system /sys/class/audio/earjack/reselect_jack
+< 
+< # Battery node
+---
+> # Permissions for Battery nodes
+578,601d528
+< # CTIA event
+<    chown sdcard_rw sdcard_rw /sys/class/power_supply/battery/call
+<    chown sdcard_rw sdcard_rw /sys/class/power_supply/battery/video
+<    chown sdcard_rw sdcard_rw /sys/class/power_supply/battery/music
+<    chown sdcard_rw sdcard_rw /sys/class/power_supply/battery/browser
+<    chown sdcard_rw sdcard_rw /sys/class/power_supply/battery/hotspot
+<    chown sdcard_rw sdcard_rw /sys/class/power_supply/battery/camera
+<    chown system radio /sys/class/power_supply/battery/talk_wcdma
+<    chown system radio /sys/class/power_supply/battery/talk_gsm
+<    chown system radio /sys/class/power_supply/battery/call
+<    chown system radio /sys/class/power_supply/battery/data_call
+<    chown gps radio /sys/class/power_supply/battery/gps
+<    chown system radio /sys/class/power_supply/battery/wifi
+<    chown system radio /sys/class/power_supply/battery/lte
+< 
+< # Thermistor node
+<     chown radio system /sys/devices/platform/sec-thermistor/temp_adc
+<     chown radio system /sys/devices/platform/sec-thermistor/temperature
+< 
+< # Switch Device
+<     chown system radio /sys/class/sec/switch/uart_sel
+<     chown system radio /sys/class/sec/switch/usb_sel
+<     chown system radio /sys/class/sec/switch/apo_factory
+< 
+623,633d549
+< # Vibetonz
+<     chmod 0660 /dev/tspdrv
+<     chown system system /dev/tspdrv
+< 
+< # for datarouter
+<     chown system system /dev/dun
+<     chown system system /dev/ttyGS0
+<     chown system system /dev/ttyGS1
+<     chown system system /dev/ttyGS2
+<     chown system system /dev/ttyGS3
+< 
+638c554
+<     setprop net.tcp.buffersize.lte     524288,1048576,2560000,524288,1048576,2560000
+---
+>     setprop net.tcp.buffersize.lte     524288,1048576,2097152,262144,524288,1048576
+640,643c556,559
+<     setprop net.tcp.buffersize.hspa    4092,87380,704512,4096,16384,262144
+<     setprop net.tcp.buffersize.hsupa   4092,87380,704512,4096,16384,262144
+<     setprop net.tcp.buffersize.hsdpa   4092,87380,704512,4096,16384,110208
+<     setprop net.tcp.buffersize.hspap   4092,87380,704512,4096,16384,262144
+---
+>     setprop net.tcp.buffersize.hspa    4094,87380,262144,4096,16384,262144
+>     setprop net.tcp.buffersize.hsupa   4094,87380,262144,4096,16384,262144
+>     setprop net.tcp.buffersize.hsdpa   4094,87380,262144,4096,16384,262144
+>     setprop net.tcp.buffersize.hspap   4094,87380,1220608,4096,16384,1220608
+648,654d563
+< # wifi display
+<    # write /proc/sys/net/core/rmem_max   131071
+<     write /proc/sys/net/core/wmem_max   2097152
+< 
+< # permission for HDMI audio path
+<     chown media audio /sys/class/hdmi_audio/hdmi_audio/hdmi_audio_set_ext
+< 
+658,674d566
+< # icd
+<     exec icd_check
+<     chown system system /dev/icd
+<     chmod 0644 /dev/icd
+<     write /dev/icdr 0
+<     chown system system /dev/icdr
+<     chmod 0644 /dev/icdr
+<     chown system system /dev/tzic
+< 
+< # HDCP 2.x
+<     mkdir /data/system/hdcp2 0775 system system
+< 
+< # h2k permission
+<     chown radio system /efs/redata.bin
+<     chmod 0644 /efs/h2k.dat
+<     mkdir /data/misc/radio/hatp 0775 radio system
+< 
+705d596
+< 
+709a601,603
+> on property:sys.powerctl=*
+>     powerctl ${sys.powerctl}
+> 
+716a611,624
+> service healthd /sbin/healthd
+>     class core
+>     critical
+>     seclabel u:r:healthd:s0
+> 
+> service healthd-charger /sbin/healthd -n
+>     class charger
+>     critical
+>     seclabel u:r:healthd:s0
+> 
+> #on property:selinux.reload_policy=1
+> #    restart ueventd
+> #    restart installd
+> 
+721,722c629,638
+<     user root
+<     group root
+---
+>     user shell
+>     group log
+> ## WTL_EDM_START
+> ## EDM AuditLog
+> service edmaudit /system/bin/edmaudit
+> 	class main
+> 	user root
+> 	
+> ## WTL_EDM_END
+> 
+747,752d662
+< #2013-01-02 system profiling
+< service sysmon /system/bin/sysmon
+<     class main
+<     user root
+<     oneshot
+< 
+762d671
+<     onrestart restart sensorhubservice
+768a678
+>     socket epm stream 0660 system system
+779,808d688
+< service DR-daemon /system/bin/ddexe
+<     class main
+<     user root
+<     group system radio inet net_raw
+< 
+< service KIES-daemon /system/bin/kiesexe
+<     class main
+<     user root
+<     group system radio inet net_raw
+< 
+< service SMD-daemon /system/bin/smdexe
+<     class main
+<     user root
+<     group system radio inet net_raw
+< 
+< service DTT-daemon /system/bin/dttexe
+<     class main
+<     user root
+<     group system radio inet net_raw
+< 
+< service BCS-daemon /system/bin/connfwexe
+<     class main
+<     user root
+<     group system radio inet net_raw
+< 
+< service mobex-daemon /system/bin/npsmobex
+<     class main
+<     user system
+<     group system radio inet sdcard_r sdcard_rw media_rw shell
+< 
+812c692
+<     group system graphics drmrpc
+---
+>     group graphics drmrpc
+822d701
+<     onrestart restart sensorhubservice
+837c716
+<     group system audio camera inet net_bt net_bt_admin net_bw_acct drmrpc sdcard_r sdcard_rw media_rw shell graphics lgt_gid
+---
+>     group system audio camera inet net_bt net_bt_admin net_bw_acct drmrpc sdcard_r sdcard_rw  media_rw shell graphics mediadrm
+841,845c720,724
+<     class main
+<     user media
+<     group system
+<     disabled
+<     oneshot
+---
+>      class main
+>      user media
+>      group system
+>      disabled
+>      oneshot
+857d735
+<     setprop installd.sdcard_manipulate_done 0
+860a739
+>     seclabel u:r:flash_recovery:s0
+871,877d749
+< 
+< service createsystemfile /system/bin/createsystemfile
+<     class main
+<     group system
+<     disabled
+<     oneshot
+< 
+898d769
+< #SA, System SW, sdumpstate
+903,908c774,779
+< 
+< # Vibetonz
+< service immvibed /system/bin/immvibed
+<     class core
+<     user system 
+<     group system
+---
+>     
+> # bugreport is triggered by holding down volume down, volume up and power
+> service bugreport /system/bin/dumpstate -d -p -B \
+>         -o /data/data/com.android.shell/files/bugreports/bugreport
+>     class main
+>     disabled
+909a781,782
+>     keycodes 114 115 116
+> 
+926,927c799,801
+<     start freshsebool   
+<     setenforce 1 
+---
+>     start auditd
+>     start freshsebool
+>     selinux_restore -e
+929,940c803,804
+< # SA, System SW, SAMSUNG 
+< on property:ro.dumpstate.dmesg=1 
+<     write /proc/sys/kernel/dmesg_restrict 0 
+< 
+< service prepare_param /system/bin/prepare_param.sh /dev/block/platform/dw_mmc/by-name/PARAM
+< 	class main
+< 	user root
+< 	group root
+< 	oneshot
+< 
+< # icd
+< service icd /system/bin/icd
+---
+> # SE Android sebool
+> service freshsebool /system/bin/freshsebool
+942,944c806,807
+<     user system
+<     group system log
+<     onrestart exec icd_check
+---
+>     user root
+>     disabled
+947,949d809
+< on property:init.svc.media=restarting
+<     exec icd_check
+<     start icd
+951,956d810
+< service freshsebool /system/bin/freshsebool
+< 	class main
+< 	user root
+< 	disabled
+< 	oneshot
+< 	
+958,960c812,814
+< service drs /system/bin/drs
+< 	user root
+< 	oneshot
+---
+> service drsd /system/bin/drsd
+>     class main
+>     socket drsd stream 600 system system
+962,970d815
+< on property:persist.sys.drs.enforce=1
+< 	restorecon -r /data
+< 	start drs
+< 	exec /system/bin/sh /init.selinux_restore_set.sh
+< 	
+< on property:persist.sys.drs.enforce=0
+< 	start auditd
+< 	
+< 	
+diff -r N7100_4.3/ramdisk/init.selinux_restore.sh N7100_4.4.2/ramdisk/init.selinux_restore.sh
+51a52
+>   restorecon -R /data
+54d54
+<   restorecon -R /data
+64d63
+< 
+diff -r N7100_4.3/ramdisk/init.selinux_restore_set.sh N7100_4.4.2/ramdisk/init.selinux_restore_set.sh
+47a48,52
+> SELINUX_ENFORCE=$(getprop ro.build.selinux.enforce)
+> if [ "$SELINUX_ENFORCE" == "1" ]; then
+> 	setenforce 1
+> 	echo "init:init.selinux_restore_set.sh : set enforcing" > /dev/kmsg
+> fi
+diff -r N7100_4.3/ramdisk/init.smdk4x12.rc N7100_4.4.2/ramdisk/init.smdk4x12.rc
+3c3,4
+< import init.container.rc
+---
+> import init.carrier.rc
+> #import init.container.rc
+6a8
+>     mkdir /tombstones
+8a11,20
+> 
+>     # See storage config details at http://source.android.com/tech/storage/
+>     mkdir /mnt/media_rw/extSdCard 0700 media_rw media_rw
+>     mkdir /mnt/media_rw/UsbDriveA 0700 media_rw media_rw
+>     mkdir /mnt/media_rw/UsbDriveB 0700 media_rw media_rw
+>     mkdir /mnt/media_rw/UsbDriveC 0700 media_rw media_rw
+>     mkdir /mnt/media_rw/UsbDriveD 0700 media_rw media_rw
+>     mkdir /mnt/media_rw/UsbDriveE 0700 media_rw media_rw
+>     mkdir /mnt/media_rw/UsbDriveF 0700 media_rw media_rw
+> 
+23c35
+< 	symlink /mnt/shell/container /storage/container
+---
+>     symlink /mnt/shell/container /storage/container
+28c40
+< # map "real" external storages paths also in same way. backwards compatibility.
+---
+>     # map "real" external storages paths also in same way. backwards compatibility.
+37,44c49,59
+<     export SECONDARY_STORAGE /storage/extSdCard:/storage/UsbDriveA:/storage/UsbDriveB:/storage/UsbDriveC:/storage/UsbDriveD:/storage/UsbDriveE:/storage/UsbDriveF
+<     mkdir /storage/extSdCard 0000 system system
+<     mkdir /storage/UsbDriveA 0000 system system
+<     mkdir /storage/UsbDriveB 0000 system system
+<     mkdir /storage/UsbDriveC 0000 system system
+<     mkdir /storage/UsbDriveD 0000 system system
+<     mkdir /storage/UsbDriveE 0000 system system
+<     mkdir /storage/UsbDriveF 0000 system system
+---
+>     export SECONDARY_STORAGE /storage/extSdCard
+>     
+>     mkdir /storage/extSdCard 0700 root root
+>     mkdir /storage/UsbDriveA 0700 root root
+>     mkdir /storage/UsbDriveB 0700 root root
+>     mkdir /storage/UsbDriveC 0700 root root
+>     mkdir /storage/UsbDriveD 0700 root root
+>     mkdir /storage/UsbDriveE 0700 root root
+>     mkdir /storage/UsbDriveF 0700 root root
+> 
+>     mkdir /efs 0771 radio system
+59a75,77
+>     # make directory for DRM
+>     mkdir /data/app/mcRegistry 0755 root root
+> 
+62a81,82
+>     mkdir /data/anr 0775 system system
+>     chown system system /data/anr
+66a87,88
+>     restorecon /data/log
+>     restorecon /data/anr
+75c97
+<     mkdir /data/misc/wifi 0770 wifi system
+---
+>     mkdir /data/misc/wifi 0775 wifi system
+79c101
+<     chmod 0660 /data/misc/wifi/wpa_supplicant.conf
+---
+>     mkdir /system/etc/wifi 0775 wifi wifi
+81a104,105
+>     chmod 0660 /data/misc/wifi/wpa_supplicant.conf
+> 
+84a109
+>     mkdir /data/local 0751 root root
+87a113,116
+>     # Waketime for fast dormancy
+>     chown system radio /sys/devices/platform/mdm_hsic_pm0/waketime
+>     chmod 0660 /sys/devices/platform/mdm_hsic_pm0/waketime
+> 
+100c129,139
+<     chmod 0660 /data/.psm.info
+---
+>     chmod 0664 /data/.psm.info
+> 
+>     # for WIFI Cert
+>     chmod 0664 /data/.bustxglom.info
+>     chmod 0664 /data/.roamoff.info
+>     chmod 0664 /data/.frameburst.info
+>     chmod 0664 /data/.txbf.info
+> 
+> # Waketime fot fast dormancy
+>     chown system radio /sys/devices/platform/mdm_hsic_pm0/waketime
+>     chmod 0660 /sys/devices/platform/mdm_hsic_pm0/waketime
+102,104c141,143
+<     # we will remap this as /storage/container with the sdcard fuse tool
+<     mkdir /data/container 0770 system system
+<     chown system system /data/container
+---
+> on boot
+>     mount debugfs /sys/kernel/debug /sys/kernel/debug
+> 	write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor performance
+110,115d148
+< # bugreport
+<     # symlink to bugreport storage location
+<     symlink /data/data/com.android.shell/files/bugreports /data/bugreports
+< # End - System S/W
+< 
+< on boot
+122a156
+>     setprop ro.securestorage.knox true
+173c207
+< 	chown system radio /sys/class/sensors/proximity_sensor/barcode_emul_en
+---
+>     chown system radio /sys/class/sensors/proximity_sensor/barcode_emul_en
+221c255
+< 	
+---
+> 
+233a268,285
+> # create data/gps for GPS daemon
+>     chown root system /dev/ttySAC1
+>     chmod 0660 /dev/ttySAC1
+>     chown root system /sys/class/sec/gps/GPS_PWR_EN/value
+>     chmod 0664 /sys/class/sec/gps/GPS_PWR_EN/value
+> 
+> # make sure data_system dir and perms are properly set
+>     mkdir /data/system 0771 system system
+>     chown system system /data/system
+>     mkdir /data/system/gps 0771 system system
+>     chown system system /data/system/gps
+> 
+> # delete gps Factory file
+>     rm /data/gps_started
+>     rm /data/glonass_started
+>     rm /data/smd_started
+>     rm /data/sv_cno.info
+> 
+251c303,337
+< 	
+---
+> #MDM requirement
+>     mkdir /data/cp_log
+>     chmod 0775 /data/cp_log
+>     chown system radio /data/cp_log
+> 
+>     mkdir /dev/block/modem
+>     symlink /dev/block/platform/dw_mmc/by-name/m9kefs1 /dev/block/modem/m9kefs1
+>     symlink /dev/block/platform/dw_mmc/by-name/m9kefs2 /dev/block/modem/m9kefs2
+>     symlink /dev/block/platform/dw_mmc/by-name/m9kefs3 /dev/block/modem/m9kefs3
+>     symlink /dev/block/platform/dw_mmc/by-name/ /dev/block/modem/dump_path
+>     chown system radio /dev/block/modem/m9kefs1
+>     chmod 0775 /dev/block/modem/m9kefs1
+>     chown system radio /dev/block/modem/m9kefs2
+>     chmod 0775 /dev/block/modem/m9kefs2
+>     chown system radio /dev/block/modem/m9kefs3
+>     chmod 0775 /dev/block/modem/m9kefs3
+>     chown system radio /dev/block/modem/dump_path
+>     chmod 0775 /dev/block/modem/dump_path
+> 
+>     mkdir /firmware 0771 system system
+>     mount vfat /dev/block/mmcblk0p10 /firmware ro shortname=lower fmask=0133,dmask=0022
+>     chown system system /tombstones
+>     chmod 0775 /tombstones
+>     mkdir /tombstones/modem 0775 system system
+>     mkdir /tombstones/lpass 0775 system system
+>     mkdir /tombstones/wcnss 0775 system system
+>     mkdir /tombstones/dsps 0775 system system
+>     rmdir /tombstones/qcks
+>     mkdir /tombstones/qcks 771 system system
+>     rmdir /tombstones/efs
+>     mkdir /tombstones/efs 771 system system
+> 
+>     chown system radio /dev/block/platform/dw_mmc/by-name
+>     chmod 0775 /dev/block/platform/dw_mmc/by-name
+> 
+255a342,347
+>     chown radio system /sys/power/gpu_lock
+>     chown radio system /sys/devices/system/cpu/busfreq/min_freq
+>     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/cpucore_table
+>     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/max_cpu_lock
+>     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/min_cpu_lock
+>     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/hotplug_lock
+258a351,356
+>     chmod 0660 /sys/power/gpu_lock
+>     chmod 0660 /sys/devices/system/cpu/busfreq/min_freq
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/cpucore_table
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/max_cpu_lock
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/min_cpu_lock
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/hotplug_lock
+267,280d364
+< # create data/gps for GPS daemon
+<     chown root system /dev/ttySAC1
+<     chmod 0660 /dev/ttySAC1
+<     chown root system /sys/class/sec/gps/GPS_PWR_EN/value
+<     chmod 0664 /sys/class/sec/gps/GPS_PWR_EN/value
+<     chown root system /sys/class/sec/gps/GPS_nRST/value
+<     chmod 0664 /sys/class/sec/gps/GPS_nRST/value
+< 
+< # make sure data_system dir and perms are properly set.
+<     mkdir /data/system 0771 system system
+<     chown system system /data/system
+<     mkdir /data/system/gps 0771 system system
+<     chown system system /data/system/gps
+< 
+294a379
+>     chown system media_rw /sys/class/mdnie/mdnie/outdoor
+302a388
+>     chown system radio /sys/class/sec/switch/apo_factory
+304,306c390,399
+< # IPC sysfs
+<     chown radio radio /sys/devices/virtual/misc/multipdp/waketime
+<     symlink /dev/block/mmcblk0p10 /dev/mbin0
+---
+>     # copy DRM binary
+>     copy /system/app/mcRegistry/00060308060501020000000000000000.tlbin /data/app/mcRegistry/00060308060501020000000000000000.tlbin
+>     copy /system/app/FFFFFFFF000000000000000000000001.drbin /data/app/FFFFFFFF000000000000000000000001.drbin
+>     copy /system/app/SAMSUNG_EXYNOS4X12_000000000001.kbox /data/app/SAMSUNG_EXYNOS4X12_000000000001.kbox
+>     copy /system/app/ecm.dat /data/app/ecm.dat
+>     copy /system/app/emm.dat /data/app/emm.dat
+>     copy /system/app/wv_test /data/app/wv_test
+> 
+>     chmod 0555 /data/app/FFFFFFFF000000000000000000000001.drbin
+>     chmod 0555 /data/app/mcRegistry/00060308060501020000000000000000.tlbin
+311a405,424
+> on post-fs-data
+> 
+> #QCRIL
+> 
+>     #Create QMUX deamon socket area
+>     mkdir /dev/socket/qmux_radio 0770 radio radio
+>     chmod 2770 /dev/socket/qmux_radio
+>     mkdir /dev/socket/qmux_audio 0770 media audio
+>     chmod 2770 /dev/socket/qmux_audio
+> 
+>     # Allow QMUX daemon to assign port open wait time
+>     chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
+> 
+>     # To prevent out of order acknowledgements from making
+>     # connection tracking to treat them as not belonging to
+>     # the connection they belong to.
+>     # Otherwise, a weird issue happens in which some long
+>     # connections on high-throughput links get dropped when
+>     # an ack packet comes out of order
+>     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
+314a428
+>     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor pegasusq
+316a431,434
+>     write /proc/sys/net/ipv6/conf/rmnet_usb0/accept_ra 2
+>     write /proc/sys/net/ipv6/conf/rmnet_usb1/accept_ra 2
+>     write /proc/sys/net/ipv6/conf/rmnet_usb2/accept_ra 2
+>     write /proc/sys/net/ipv6/conf/rmnet_usb3/accept_ra 2
+317a436,453
+>     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/cpucore_table
+>     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/max_cpu_lock
+>     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/min_cpu_lock
+>     chown radio system /sys/devices/system/cpu/cpufreq/pegasusq/hotplug_lock
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/cpucore_table
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/max_cpu_lock
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/min_cpu_lock
+>     chmod 0660 /sys/devices/system/cpu/cpufreq/pegasusq/hotplug_lock
+> 
+> 
+> # umount service
+> #service umount_service /system/bin/umount /preload
+> #   disabled
+> #   oneshot
+> 
+> #on property:persist.sys.storage_preload=1
+> #   mount ext4 /dev/block/mmcblk0p14 /preload nosuid nodev noatime wait ro
+> #   setprop storage.preload.complete 1
+319,321c455,456
+< on property:persist.sys.storage_preload=1
+<     mount ext4 /dev/block/mmcblk0p14 /preload nosuid nodev noatime wait ro
+<     setprop storage.preload.complete 1
+---
+> #on property:persist.sys.storage_preload=0
+> #    start umount_service
+323,325d457
+< on property:persist.sys.storage_preload=0
+<     exec /system/bin/umount /preload   
+<     
+350,357c482,486
+< # RILD
+< service ril-daemon /system/bin/rild
+<     class main
+<     socket rild stream 660 root radio
+<     socket rild-debug stream 660 radio system
+<     user root
+<     group radio cache inet misc audio sdcard_rw log sdcard_r
+<     onrestart restart cpboot-daemon
+---
+> # underlying files in /data/media will be created with user and group media_rw (1023)
+> # virtual sdcard daemon running as media_rw (1023)
+> service sdcard /system/bin/sdcard -u 1023 -g 1023 -l -r /data/media /mnt/shell/emulated
+>     class late_start
+>     oneshot
+359c488
+< service at_distributor /system/bin/at_distributor
+---
+> service fuse_extSdCard /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d -f /mnt/media_rw/extSdCard /storage/extSdCard
+361,362c490,491
+<     user root
+<     group radio log
+---
+>     disabled
+>     oneshot
+364,367c493,498
+< # create virtual SD card at /mnt/sdcard, based on the /data/media directory
+< # daemon will drop to user/group system/media_rw after initializing
+< # underlying files in /data/media will be created with user and group media_rw (1023)
+< service sdcard /system/bin/sdcard /data/media /mnt/shell/emulated 1023 1023
+---
+> service fuse_UsbDriveA /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveA /storage/UsbDriveA
+>     class late_start
+>     disabled
+>     oneshot
+> 
+> service fuse_UsbDriveB /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveB /storage/UsbDriveB
+368a500
+>     disabled
+371,372c503
+< # virtual sdcard daemon running as system (1000)
+< service container /system/bin/sdcard /data/container /mnt/shell/container 1000 1000
+---
+> service fuse_UsbDriveC /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveC /storage/UsbDriveC
+373a505
+>     disabled
+376c508,511
+<     start container
+---
+> service fuse_UsbDriveD /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveD /storage/UsbDriveD
+>     class late_start
+>     disabled
+>     oneshot
+378,383c513,533
+< #	-iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf -N \
+< service p2p_supplicant /system/bin/p2p_supplicant \
+< 	-ip2p0 -Dnl80211 -c/data/misc/wifi/p2p_supplicant.conf -e/data/misc/wifi/entropy.bin -puse_p2p_group_interface=1
+< 	class main
+< 	disabled
+< 	oneshot
+---
+> service fuse_UsbDriveE /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveE /storage/UsbDriveE
+>     class late_start
+>     disabled
+>     oneshot
+> 
+> service fuse_UsbDriveF /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveF /storage/UsbDriveF
+>     class late_start
+>     disabled
+>     oneshot
+> 
+> service p2p_supplicant /system/bin/wpa_supplicant \
+>     -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf \
+>     -I/system/etc/wifi/wpa_supplicant_overlay.conf -O/data/misc/wifi/sockets -N \
+>     -ip2p0 -Dnl80211 -c/data/misc/wifi/p2p_supplicant.conf \
+>     -I/system/etc/wifi/p2p_supplicant_overlay.conf \
+>     -puse_p2p_group_interface=1 -puse_multi_chan_concurrent=1 \
+>     -e/data/misc/wifi/entropy.bin -g@android:wpa_wlan0
+>     class main
+>    socket wpa_wlan0 dgram 660 wifi wifi
+>     disabled
+>     oneshot
+385,390c535,536
+< service wpa_supplicant /system/bin/wpa_supplicant \
+<     -Dnl80211 -iwlan0 -e/data/misc/wifi/entropy.bin -c/data/misc/wifi/wpa_supplicant.conf
+<     #   we will start as root and wpa_supplicant will switch to user wifi
+<     #   after setting up the capabilities required for WEXT
+<     #   user wifi
+<     #   group wifi inet keystore
+---
+> service wpa_supplicant /system/bin/wpa_supplicant -g@android:wpa_wlan0 \
+>     -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf -e/data/misc/wifi/entropy.bin
+416,417c562,569
+< # GPS
+< service gpsd /system/bin/gpsd -c /system/etc/gps.xml
+---
+> # AT Distributor for factory test
+> service at_distributor /system/bin/at_distributor
+>     class late_start
+>     user root
+>     group radio log
+> 
+> # diag app for cp uart
+> service diag_uart_log /system/bin/diag_uart_log
+419,421c571,572
+<     user gps
+<     group system inet net_raw
+<     ioprio be 0
+---
+>     user root
+>     group radio
+429a581
+> 
+435d586
+< 
+445,446c596,597
+<     user system 
+<     group system 
+---
+>     user system
+>     group system
+448a600,606
+> # GPS
+> service gpsd /system/bin/gpsd -c /system/etc/gps.xml
+>     class main
+>     user gps
+>     group system inet net_raw
+>     ioprio be 0
+> 
+476a635,677
+> #QCRIL
+> service netmgrd /system/bin/netmgrd
+>     class late_start
+> 
+> service qc_kickstart /system/bin/qcks s
+>     class core
+>     user root
+>     group radio cache inet misc audio sdcard_rw log
+> 
+> service ril-daemon /system/bin/rild
+>     class main
+>     socket rild stream 660 root radio
+>     socket rild-debug stream 660 radio system
+>     user root
+>     group radio cache inet misc audio sdcard_rw sdcard_r
+>     onrestart restart cpboot-daemon
+> 
+> #sensorhubservice start
+> service sensorhubservice /system/bin/sensorhubservice
+>     class main
+>     user system
+>     group input
+> 
+> service secril-daemon /system/bin/sec-ril
+>     class main
+>     user root
+>     group radio cache inet misc audio sdcard_rw diag log
+> 
+> #For EncryptionMode - remove disabled, Modify class main
+> service qmiproxy /system/bin/qmiproxy
+>     class main
+>     user radio
+>     group radio
+> 
+> service qmuxd /system/bin/qmuxd
+>     class main
+>     user root
+>     group radio log audio bluetooth log
+> 
+> on property:ro.use_data_netmgrd=false
+> #netmgr not supported on specific target
+>     stop netmgrd
+> 
+501,502c702,703
+< #sensorhubservice start
+< service sensorhubservice /system/bin/sensorhubservice
+---
+> # bluetooth dhcp config
+> service dhcpcd_bt-pan /system/bin/dhcpcd -ABKL
+504,505c705,723
+<     user system
+<     group input
+---
+>     disabled
+>     oneshot
+> 
+> service iprenew_bt-pan /system/bin/dhcpcd -n
+>     class late_start
+>     disabled
+>     oneshot
+> 
+> # SA, System SW, SAMSUNG
+> #service bugreport /system/bin/bugmailer.sh -v
+> #    class main
+> #    disabled
+> #    oneshot
+> #    keycodes 114 115 116
+> 
+> #service sdumpstate /system/bin/dumpstate -P
+> #    class main
+> #    disabled
+> #    oneshot
+513d730
+< 
+535c752
+< on property:sys.mobicoredaemon.enable=true
+---
+> on property:ro.securestorage.knox=true
+540a758,761
+> 	
+> # LPM
+> on property:ro.bootmode=charger
+>     mount ext4 /dev/block/mmcblk0p13 /system wait ro
+542,546c763,764
+< # bluetooth dhcp config
+< service dhcpcd_bt-pan /system/bin/dhcpcd -ABKL
+<     class main
+<     disabled
+<     oneshot
+---
+> on property:ro.bootmode=charger
+>     class_start sec-charger
+548,551c766,768
+< service iprenew_bt-pan /system/bin/dhcpcd -n
+<     class late_start
+<     disabled
+<     oneshot
+---
+> service playlpm /system/bin/lpm
+>     class sec-charger
+>     critical
+553,555c770
+< # bugreport
+< service bugreport /system/bin/dumpstate -d -p -B \
+<                 -o /data/data/com.android.shell/files/bugreports/bugreport
+---
+> service DR-daemon /system/bin/ddexe
+557,560c772,778
+<     disabled
+<     oneshot
+<     keycodes 114 115 116
+< # End - System S/W
+---
+>     user root
+>     group system radio inet net_raw
+> 
+> service SMD-daemon /system/bin/smdexe
+>     class main
+>     user root
+>     group system radio inet net_raw
+561a780,789
+> service BCS-daemon /system/bin/connfwexe
+>     class main
+>     user root
+>     group system radio inet net_raw
+> 	
+> #NPSMOBEX
+> service mobex-daemon /system/bin/npsmobex
+>     class main
+>     user system
+>     group system radio inet sdcard_r sdcard_rw media_rw shell
+diff -r N7100_4.3/ramdisk/init.smdk4x12.usb.rc N7100_4.4.2/ramdisk/init.smdk4x12.usb.rc
+21d20
+< 
+80,88d78
+<     setprop sys.usb.state ${sys.usb.config}
+< 
+<  on property:sys.usb.config=rndis,acm,dm,adb
+<     write /sys/class/android_usb/android0/enable 0
+<     write /sys/class/android_usb/android0/idVendor 04e8
+<     write /sys/class/android_usb/android0/idProduct 6864
+<     write /sys/class/android_usb/android0/functions ${sys.usb.config}
+<     write /sys/class/android_usb/android0/enable 1
+<     start adbd
+Only in N7100_4.4.2/ramdisk/lib/modules: commkm.ko
+Binary files N7100_4.3/ramdisk/lib/modules/dhd.ko and N7100_4.4.2/ramdisk/lib/modules/dhd.ko differ
+Only in N7100_4.4.2/ramdisk/lib/modules: mvpkm.ko
+Only in N7100_4.4.2/ramdisk/lib/modules: oektestkm.ko
+Only in N7100_4.4.2/ramdisk/lib/modules: pvtcpkm.ko
+Binary files N7100_4.3/ramdisk/lib/modules/scsi_wait_scan.ko and N7100_4.4.2/ramdisk/lib/modules/scsi_wait_scan.ko differ
+diff -r N7100_4.3/ramdisk/property_contexts N7100_4.4.2/ramdisk/property_contexts
+6a7
+> net.rmnet_usb0.         u:object_r:radio_prop:s0
+23a25
+> sys.powerctl            u:object_r:powerctl_prop:s0
+26a29
+> bluetooth.              u:object_r:bluetooth_prop:s0
+28c31
+< debug.                  u:object_r:shell_prop:s0
+---
+> debug.                  u:object_r:debug_prop:s0
+35a39
+> persist.service.bdroid. u:object_r:bluetooth_prop:s0
+56c60,61
+< bluetooth.	u:object_r:bt_prop:s0
+---
+> #fix build error - duplicate definition
+> #bluetooth.	u:object_r:bt_prop:s0
+72a78,81
+> persist.security.good.      u:object_r:good_mgmt_prop:s0
+> persist.security.mdm.       u:object_r:policy_mgmt_prop:s0
+> #line 1 "vendor/samsung/common/sepolicy/qcom_common/carrier_spr/property_contexts"
+> cdma.home.	u:object_r:radio_prop:s0
+Only in N7100_4.4.2/ramdisk: publiccert.pem
+Binary files N7100_4.3/ramdisk/sbin/adbd and N7100_4.4.2/ramdisk/sbin/adbd differ
+Binary files N7100_4.3/ramdisk/sbin/cbd and N7100_4.4.2/ramdisk/sbin/cbd differ
+Binary files N7100_4.3/ramdisk/sbin/ffu and N7100_4.4.2/ramdisk/sbin/ffu differ
+Only in N7100_4.4.2/ramdisk/sbin: healthd
+diff -r N7100_4.3/ramdisk/seapp_contexts N7100_4.4.2/ramdisk/seapp_contexts
+6d5
+< user=shell seinfo=platform domain=platform_app type=platform_app_data_file
+7a7
+> user=shell name=com.android.shell domain=untrusted_app type=shell_data_file
+17a18,19
+> user=_app seinfo=untrusted name=com.google.android.inputmethod.korean domain=knox_untrusted_app type=app_data_file
+> user=_app seinfo=untrusted name=com.google.android.inputmethod.pinyin domain=knox_untrusted_app type=app_data_file
+29,33d30
+< user=_app seinfo=release name=com.android.browser domain=browser_app type=platform_app_data_file
+< user=_app seinfo=vpn domain=vpn_app type=vpn_app_data_file
+< user=_app seinfo=container_service name=com.sec.knox.container domain=container_service type=container_app_data_file level=s0:c1.c1023
+< user=_app seinfo=secure_box name=com.sec.knox.shortcut.securitymode domain=secure_box_app type=container_app_data_file level=s0:c1022
+< user=_app seinfo=edm name=com.sec.enterprise.knox domain=edm_app type=container_app_data_file level=s0:c1023
+35a33
+> user=_app seinfo=platform name=com.sec.smartcard.pinservice type=platform_app_data_file
+45a44,46
+> user=_app seinfo=untrusted name=com.google.android.calendar domain=filtered_google_app type=app_data_file
+> user=_app seinfo=untrusted name=com.google.android.gms domain=filtered_google_app type=app_data_file
+> user=_app seinfo=untrusted name=com.google.process.location domain=filtered_google_app type=app_data_file
+46a48,49
+> user=_app seinfo=llk_untrusted name=com.customermobile.preload.main2 domain=llk_untrusted_app type=app_data_file
+> user=_app seinfo=llk_untrusted name=com.customermobile.preload domain=llk_untrusted_app type=app_data_file
+66c69,91
+< user=_app seinfo=dm3lmdocomo domain=dmdocomo_app type=app_data_file
+---
+> user=_app seinfo=dm3lmdocomo domain=carrier_app type=app_data_file
+> user=_app seinfo=fixmo domain=fixmo_app type=fixmo_app_data_file
+> user=_app seinfo=jpnandroidggm domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnnttdocomo domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnbridgelauncher domain=carrier_app type=app_data_file
+> user=_app seinfo=jpncategorynavi domain=carrier_app type=app_data_file
+> user=_app seinfo=jpncontentsheadline domain=carrier_app type=app_data_file
+> user=_app seinfo=jpndecoemojimanager domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnkoenotakuhaibin domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnmfsaddon domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnmonthlytraffic domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnsugotokucontents domain=carrier_app type=app_data_file
+> user=_app seinfo=jpntwitter domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnchkapl domain=carrier_app type=app_data_file
+> user=_app seinfo=jpndcmictag domain=carrier_app type=app_data_file
+> user=_app seinfo=jpndmapnavi domain=carrier_app type=app_data_file
+> user=_app seinfo=jpndocomoremote domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnebookviewer domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnhanashite domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnid domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnrwpushcontroller domain=carrier_app type=app_data_file
+> user=_app seinfo=jpntoruca domain=carrier_app type=app_data_file
+> user=_app seinfo=jpnja15 domain=carrier_app type=app_data_file
+Binary files N7100_4.3/ramdisk/sepolicy and N7100_4.4.2/ramdisk/sepolicy differ
+diff -r N7100_4.3/ramdisk/sepolicy_version N7100_4.4.2/ramdisk/sepolicy_version
+1,7c1,7
+< VE=SEPF_GT-N7100_4.3_0023
+< HS=290d84eed5e02b84b5fb2d25c9d3558d
+< HA=168b5ab34628cfda35caf339826f52d5
+< HP=0ef457e4c9cbf00b9100f4872e3f7d50
+< HF=1e6eec976a98ee1c59f0c3410c0e4d94
+< HM=acf0f2ac5e9e687f19cd9597638698a9
+< BD=Thu Apr 17 20:22:35 2014
+---
+> VE=SEPF_GT-N7100_4.4.2_0011
+> HS=974fe828eff5fcb7c245dc2db5067ccb
+> HA=b5e1ab51c6dcedd9181e99c3a0ee8667
+> HP=4c96573169be5413fd0486dc1cc9464d
+> HF=356233b89618285fbe1cad4cced4c674
+> HM=6668c690370e7875620d0f60c1ff1f28
+> BD=Wed Apr 09 03:00:11 2014
+Only in N7100_4.4.2/ramdisk: ueventd.goldfish.rc
+diff -r N7100_4.3/ramdisk/ueventd.rc N7100_4.4.2/ramdisk/ueventd.rc
+10d9
+< /dev/tima		  0666	 root	    root
+80d78
+< /dev/hidraw*              0660   root       system
+diff -r N7100_4.3/ramdisk/ueventd.smdk4x12.rc N7100_4.4.2/ramdisk/ueventd.smdk4x12.rc
+14c14
+< /dev/fimg2d               0666   system     graphics
+---
+> /dev/fimg2d               0660   system     graphics
+28c28,45
+< /dev/block/mmcblk0p10     0660	 system	    radio
+---
+> /dev/block/mmcblk0p7	  0660	 system	    radio
+> 
+> # ipc / modem
+> /dev/block/mmcblk0p7      0660   system     root
+> /dev/block/mmcblk0p10     0660   system     radio
+> /dev/block/mmcblk0p4      0660   system     radio
+> /dev/block/mmcblk0p5      0660   system     radio
+> /dev/block/mmcblk0p6      0660   system     radio
+> /dev/block/mmcblk0p11     0660   system     radio
+> /dev/mdm               0660   system     system
+> 
+> /dev/block/mmcblk1	  0660   root	    system
+> /dev/ttyUSB0              0660   system     system
+> /dev/ttyUSB1              0660   system     radio
+> /dev/ttyUSB2              0660   system     system
+> /dev/hsic*                0660   system     radio
+> /dev/usb/lp*              0660   system     usb
+> /dev/ttyGS0              0660   system     system
+32d48
+< 
+35d50
+< /dev/usb/lp*              0660   system     usb

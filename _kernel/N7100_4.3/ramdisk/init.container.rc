@@ -1,0 +1,29 @@
+on early-init
+    # create Container mountpoints
+    mkdir /mnt_1 0775 root system
+
+    mkdir /mnt_1/sdcard_1 0775 system system
+    mkdir /mnt_1/sdcard_2 0775 system system
+    mkdir /mnt_1/sdcard_3 0775 system system
+    mkdir /mnt_1/extSdCard 0775 system system
+
+    mkdir /data_1 0770 system system
+    mkdir /data_2 0770 system system
+    mkdir /data_3 0770 system system
+
+on post-fs-data
+    #container mount points
+    mkdir /data/.container_1 0771 system system
+    mkdir /data/.container_2 0771 system system
+    mkdir /data/.container_3 0771 system system
+
+    restorecon /data/.container_1
+    restorecon /data/.container_2
+    restorecon /data/.container_3
+
+on boot
+
+service containersetup /system/bin/containersetup
+    class main
+    disabled
+    oneshot
