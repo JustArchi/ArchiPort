@@ -30,7 +30,7 @@ on post-fs-data
 
 on boot
 
-service container /system/bin/sdcard -u 1000 -g 1000 -r /data/container /mnt/shell/container
+service container /system/bin/sdcard -u 1000 -g 1000 /data/container /mnt/shell/container
     class late_start
     oneshot
 

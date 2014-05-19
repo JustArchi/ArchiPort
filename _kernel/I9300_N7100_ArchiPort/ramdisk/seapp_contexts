@@ -9,8 +9,10 @@ user=_app domain=untrusted_app type=app_data_file
 user=system name=com.sec.knox.containeragent domain=knox_system_app type=system_data_file
 user=system name=com.policydm domain=knox_system_app type=system_data_file
 user=_app name=com.centrify.mdm.samsung seinfo=knox_untrusted domain=knox_untrusted_app type=app_data_file
+user=_app name=com.samsung.knoxemm.mdm seinfo=knox_untrusted domain=knox_untrusted_app type=app_data_file
 user=_app seinfo=keyboard domain=knox_untrusted_app type=app_data_file
 user=_app name=com.baimobile.android.pcsclite.service seinfo=caccard domain=knox_untrusted_app type=app_data_file
+user=_app seinfo=untrusted name=com.android.vending domain=knox_untrusted_app type=app_data_file
 user=_app seinfo=untrusted name=com.google.android.googlequicksearchbox domain=knox_untrusted_app type=app_data_file
 user=_app seinfo=untrusted name=com.google.android.googlequicksearchbox:search domain=knox_untrusted_app type=app_data_file
 user=_app seinfo=untrusted name=com.google.process.gapps domain=knox_untrusted_app type=app_data_file
@@ -68,6 +70,7 @@ user=oneseg name=com.nextreaming.player.apps domain=oneseg_apk type=oneseg_data_
 user=oneseg name=com.access.bml domain=oneseg_apk type=oneseg_data_file
 user=_app seinfo=dm3lmdocomo domain=carrier_app type=app_data_file
 user=_app seinfo=fixmo domain=fixmo_app type=fixmo_app_data_file
+user=_app seinfo=trustonicpartner domain=trustonicpartner_app type=app_data_file
 user=_app seinfo=jpnandroidggm domain=carrier_app type=app_data_file
 user=_app seinfo=jpnnttdocomo domain=carrier_app type=app_data_file
 user=_app seinfo=jpnbridgelauncher domain=carrier_app type=app_data_file

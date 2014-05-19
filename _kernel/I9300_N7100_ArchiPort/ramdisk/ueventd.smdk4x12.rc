@@ -25,15 +25,22 @@
 /dev/srp                  0660   system     audio
 /dev/srp_ctrl             0660   system     audio
 /dev/umts*                0660   system     radio
-/dev/block/mmcblk0p7	  0660	 system	    radio
-/dev/block/mmcblk0p4	  0660	 system	    system
+/dev/block/mmcblk0p4	  0660	 system	    radio
 
 # ipc / modem
+/dev/block/mmcblk0p4      0660   system     root
+/dev/block/mmcblk0p7      0660   system     radio
 /dev/mdm               0660   system     system
 
 /dev/block/mmcblk1	  0660   root	    system
+/dev/ttyUSB0              0660   system     system
+/dev/ttyUSB1              0660   system     radio
+/dev/ttyUSB2              0660   system     system
+/dev/hsic*                0660   system     radio
 /dev/usb/lp*              0660   system     usb
 /dev/ttyGS0              0660   system     system
 
 # sensor sysfs properties
 /sys/devices/virtual/input/input*   poll_delay  0660  system   radio
+# sensorhub
+/dev/ssp_sensorhub        0660   system     system

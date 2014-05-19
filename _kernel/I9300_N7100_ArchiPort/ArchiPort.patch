@@ -1,0 +1,248 @@
+Binary files N7100_XXUFND3_4.4.2/boot.img and ArchiPort_I9300XXUGND3_N7100XXUGND3/boot.img differ
+Binary files N7100_XXUFND3_4.4.2/boot.img-ramdisk.gz and ArchiPort_I9300XXUGND3_N7100XXUGND3/boot.img-ramdisk.gz differ
+Binary files N7100_XXUFND3_4.4.2/boot.img-zImage and ArchiPort_I9300XXUGND3_N7100XXUGND3/boot.img-zImage differ
+diff -rupN N7100_XXUFND3_4.4.2/ramdisk/fstab.smdk4x12 ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/fstab.smdk4x12
+--- N7100_XXUFND3_4.4.2/ramdisk/fstab.smdk4x12	2014-05-13 22:34:34.465511400 +0200
++++ ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/fstab.smdk4x12	2014-05-18 19:35:12.040299600 +0200
+@@ -4,18 +4,17 @@
+ # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+ # data partition must be located at the bottom for supporting device encryption
+ 
+-/dev/block/mmcblk0p13    /system             ext4      ro,errors=panic                                                                   wait
+-/dev/block/mmcblk0p3     /efs                ext4      nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check
+-/dev/block/mmcblk0p12    /cache              ext4      nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check
+-/dev/block/mmcblk0p14    /preload            ext4      ro,nosuid,nodev,noatime				wait
+-/dev/block/mmcblk0p16    /data               ext4      noatime,nosuid,nodev,discard,noauto_da_alloc,journal_async_commit,errors=panic    wait,check,encryptable=footer
+-/dev/block/mmcblk0p11    /tombstones         ext4      nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check
++/dev/block/mmcblk0p9    /system             ext4      ro,errors=panic                                                                   wait
++/dev/block/mmcblk0p3    /efs                ext4      nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check
++/dev/block/mmcblk0p8    /cache              ext4      nosuid,nodev,noatime,noauto_da_alloc,discard,journal_async_commit,errors=panic    wait,check
++/dev/block/mmcblk0p10   /preload            ext4      ro,nosuid,nodev,noatime                                                           wait
++/dev/block/mmcblk0p12   /data               ext4      noatime,nosuid,nodev,discard,noauto_da_alloc,journal_async_commit,errors=panic    wait,check,encryptable=footer
+ 
+ # VOLD
+-/devices/platform/s3c-sdhci.2/mmc_host/mmc1/			auto				vfat	default		voldmanaged=extSdCard:auto,noemulatedsd
+-/devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sda,/devices/platform/s5p-ehci/usb1*sda            auto                    vfat    default     voldmanaged=UsbDriveA:auto
+-/devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sdb,/devices/platform/s5p-ehci/usb1*sdb            auto                    vfat    default     voldmanaged=UsbDriveB:auto
+-/devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sdc,/devices/platform/s5p-ehci/usb1*sdc            auto                    vfat    default     voldmanaged=UsbDriveC:auto
+-/devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sdd,/devices/platform/s5p-ehci/usb1*sdd            auto                    vfat    default     voldmanaged=UsbDriveD:auto
+-/devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sde,/devices/platform/s5p-ehci/usb1*sde            auto                    vfat    default     voldmanaged=UsbDriveE:auto
+-/devices/platform/exynos-dwc3.0/exynos-xhci.0/usb2*sdf,/devices/platform/s5p-ehci/usb1*sdf           auto                    vfat    default     voldmanaged=UsbDriveF:auto
++/devices/platform/s3c-sdhci.2/mmc_host/mmc1/   auto                    vfat    default     voldmanaged=extSdCard:auto,noemulatedsd
++/devices/platform/s5p-ehci/usb1*sda            auto                    vfat    default     voldmanaged=UsbDriveA:auto
++/devices/platform/s5p-ehci/usb1*sdb            auto                    vfat    default     voldmanaged=UsbDriveB:auto
++/devices/platform/s5p-ehci/usb1*sdc            auto                    vfat    default     voldmanaged=UsbDriveC:auto
++/devices/platform/s5p-ehci/usb1*sdd            auto                    vfat    default     voldmanaged=UsbDriveD:auto
++/devices/platform/s5p-ehci/usb1*sde            auto                    vfat    default     voldmanaged=UsbDriveE:auto
++/devices/platform/s5p-ehci/usb1*sdf            auto                    vfat    default     voldmanaged=UsbDriveF:auto
+diff -rupN N7100_XXUFND3_4.4.2/ramdisk/init.container.rc ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/init.container.rc
+--- N7100_XXUFND3_4.4.2/ramdisk/init.container.rc	2014-05-13 22:34:34.463558200 +0200
++++ ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/init.container.rc	2014-05-18 19:35:12.035417600 +0200
+@@ -30,7 +30,7 @@ on post-fs-data
+ 
+ on boot
+ 
+-service container /system/bin/sdcard -u 1000 -g 1000 -r /data/container /mnt/shell/container
++service container /system/bin/sdcard -u 1000 -g 1000 /data/container /mnt/shell/container
+     class late_start
+     oneshot
+ 
+diff -rupN N7100_XXUFND3_4.4.2/ramdisk/init.smdk4x12.rc ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/init.smdk4x12.rc
+--- N7100_XXUFND3_4.4.2/ramdisk/init.smdk4x12.rc	2014-05-13 22:34:34.516294600 +0200
++++ ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/init.smdk4x12.rc	2014-05-18 19:35:12.124287200 +0200
+@@ -169,7 +169,7 @@ on boot
+ # WIFI
+     setprop wifi.interface wlan0
+ 
+-    symlink /dev/block/mmcblk0p7 /dev/block/param
++    symlink /dev/block/mmcblk0p4 /dev/block/param
+ 
+ # <Sensors & NFC>
+ # Input Events
+@@ -233,6 +233,7 @@ on boot
+     chown system radio /sys/class/sensors/barometer_sensor/name
+     chown system radio /sys/class/sensors/barometer_sensor/calibration
+ # Magnetic_sensor
++    chown system radio /dev/akm8975
+     chown system radio /dev/akm8963
+     chown system radio /sys/class/sensors/magnetic_sensor/raw_data
+     chown system radio /sys/class/sensors/magnetic_sensor/vendor
+@@ -292,35 +293,26 @@ on fs
+     setprop ro.crypto.fuse_sdcard true
+ 
+ # for LogMeIn
+-    mount ext4 /dev/block/mmcblk0p13 /system rw wait noatime remount
++    mount ext4 /dev/block/mmcblk0p9 /system rw wait noatime remount
+ 
+     chown graphics /system/bin/RescueStarter
+     chmod 0755 /system/bin/RescueStarter
+     chown graphics /system/bin/RescueServer
+     chmod 0755 /system/bin/RescueServer
+ 
+-    mount ext4 /dev/block/mmcblk0p13 /system ro wait noatime remount
++    mount ext4 /dev/block/mmcblk0p9 /system ro wait noatime remount
+ #MDM requirement
+     mkdir /data/cp_log
+     chmod 0775 /data/cp_log
+     chown system radio /data/cp_log
+ 
+     mkdir /dev/block/modem
+-    symlink /dev/block/platform/dw_mmc/by-name/m9kefs1 /dev/block/modem/m9kefs1
+-    symlink /dev/block/platform/dw_mmc/by-name/m9kefs2 /dev/block/modem/m9kefs2
+-    symlink /dev/block/platform/dw_mmc/by-name/m9kefs3 /dev/block/modem/m9kefs3
+     symlink /dev/block/platform/dw_mmc/by-name/ /dev/block/modem/dump_path
+-    chown system radio /dev/block/modem/m9kefs1
+-    chmod 0775 /dev/block/modem/m9kefs1
+-    chown system radio /dev/block/modem/m9kefs2
+-    chmod 0775 /dev/block/modem/m9kefs2
+-    chown system radio /dev/block/modem/m9kefs3
+-    chmod 0775 /dev/block/modem/m9kefs3
+     chown system radio /dev/block/modem/dump_path
+     chmod 0775 /dev/block/modem/dump_path
+ 
+     mkdir /firmware 0771 system system
+-    mount vfat /dev/block/mmcblk0p10 /firmware ro shortname=lower fmask=0133,dmask=0022
++    mount vfat /dev/block/mmcblk0p7 /firmware ro shortname=lower fmask=0133,dmask=0022
+     chown system system /tombstones
+     chmod 0775 /tombstones
+     mkdir /tombstones/modem 0775 system system
+@@ -449,7 +441,7 @@ on property:sys.boot_completed=1
+ #   oneshot
+ 
+ #on property:persist.sys.storage_preload=1
+-#   mount ext4 /dev/block/mmcblk0p14 /preload nosuid nodev noatime wait ro
++#   mount ext4 /dev/block/mmcblk0p10 /preload nosuid nodev noatime wait ro
+ #   setprop storage.preload.complete 1
+ 
+ #on property:persist.sys.storage_preload=0
+@@ -481,41 +473,41 @@ service setup_fs /system/bin/setup_fs \
+ 
+ # underlying files in /data/media will be created with user and group media_rw (1023)
+ # virtual sdcard daemon running as media_rw (1023)
+-service sdcard /system/bin/sdcard -u 1023 -g 1023 -l -r /data/media /mnt/shell/emulated
++service sdcard /system/bin/sdcard -u 1023 -g 1023 -l /data/media /mnt/shell/emulated
+     class late_start
+     oneshot
+ 
+-service fuse_extSdCard /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d -f /mnt/media_rw/extSdCard /storage/extSdCard
++service fuse_extSdCard /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/extSdCard /storage/extSdCard
+     class late_start
+     disabled
+     oneshot
+ 
+-service fuse_UsbDriveA /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveA /storage/UsbDriveA
++service fuse_UsbDriveA /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/UsbDriveA /storage/UsbDriveA
+     class late_start
+     disabled
+     oneshot
+ 
+-service fuse_UsbDriveB /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveB /storage/UsbDriveB
++service fuse_UsbDriveB /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/UsbDriveB /storage/UsbDriveB
+     class late_start
+     disabled
+     oneshot
+ 
+-service fuse_UsbDriveC /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveC /storage/UsbDriveC
++service fuse_UsbDriveC /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/UsbDriveC /storage/UsbDriveC
+     class late_start
+     disabled
+     oneshot
+ 
+-service fuse_UsbDriveD /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveD /storage/UsbDriveD
++service fuse_UsbDriveD /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/UsbDriveD /storage/UsbDriveD
+     class late_start
+     disabled
+     oneshot
+ 
+-service fuse_UsbDriveE /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveE /storage/UsbDriveE
++service fuse_UsbDriveE /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/UsbDriveE /storage/UsbDriveE
+     class late_start
+     disabled
+     oneshot
+ 
+-service fuse_UsbDriveF /system/bin/sdcard -u 1023 -g 1023 -d -f /mnt/media_rw/UsbDriveF /storage/UsbDriveF
++service fuse_UsbDriveF /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/UsbDriveF /storage/UsbDriveF
+     class late_start
+     disabled
+     oneshot
+@@ -579,7 +571,7 @@ service TvoutService_C /system/bin/bintv
+ on property:ro.tvout.enable=false
+     stop TvoutService_C
+ 
+-service cpboot-daemon /sbin/cbd -d -p10
++service cpboot-daemon /sbin/cbd -d
+     class main
+     user root
+     group radio cache inet misc audio sdcard_rw log sdcard_r
+@@ -741,24 +733,10 @@ service scranton_RD /system/bin/scranton
+ # start for TZPR provisioning version check app
+ on property:sys.mobicoredaemon.enable=true
+     start scranton_RD
+-
+-# Secure Storage startup
+-service secure_storage /system/bin/secure_storage_daemon
+-    class core
+-    user system
+-    group system
+-    disabled
+-
+-on property:ro.securestorage.knox=true
+-    mkdir /dev/.secure_storage
+-    chmod 0711 /dev/.secure_storage
+-    chown system system /dev/.secure_storage
+-    restorecon -R /dev/.secure_storage
+-    start secure_storage
+ 	
+ # LPM
+ on property:ro.bootmode=charger
+-    mount ext4 /dev/block/mmcblk0p13 /system wait ro
++    mount ext4 /dev/block/mmcblk0p9 /system wait ro
+ 
+ on property:ro.bootmode=charger
+     class_start sec-charger
+Binary files N7100_XXUFND3_4.4.2/ramdisk/lib/modules/dhd.ko and ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/lib/modules/dhd.ko differ
+Binary files N7100_XXUFND3_4.4.2/ramdisk/lib/modules/scsi_wait_scan.ko and ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/lib/modules/scsi_wait_scan.ko differ
+diff -rupN N7100_XXUFND3_4.4.2/ramdisk/lpm.rc ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/lpm.rc
+--- N7100_XXUFND3_4.4.2/ramdisk/lpm.rc	2014-05-13 22:34:34.502621400 +0200
++++ ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/lpm.rc	2014-05-18 19:35:12.101825700 +0200
+@@ -26,7 +26,7 @@ on init
+ on early-fs
+ 	insmod /lib/modules/vibrator.ko
+  
+-    mount ext4 /dev/block/mmcblk0p13 /system ro wait noatime
++    mount ext4 /dev/block/mmcblk0p9 /system ro wait noatime
+ 	mkdir /data/log 0777
+ 
+ 	chmod 0666 /dev/log/radio
+Binary files N7100_XXUFND3_4.4.2/ramdisk/sbin/cbd and ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/sbin/cbd differ
+diff -rupN N7100_XXUFND3_4.4.2/ramdisk/ueventd.smdk4x12.rc ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/ueventd.smdk4x12.rc
+--- N7100_XXUFND3_4.4.2/ramdisk/ueventd.smdk4x12.rc	2014-05-13 22:34:34.509458900 +0200
++++ ArchiPort_I9300XXUGND3_N7100XXUGND3/ramdisk/ueventd.smdk4x12.rc	2014-05-18 19:35:12.112568100 +0200
+@@ -5,7 +5,7 @@
+ /dev/s3c-mfc              0660   media      graphics
+ /dev/video0               0660   system     camera
+ /dev/video1               0660   system     camera
+-/dev/video2               0660   system     graphics
++/dev/video2               0660   system     camera
+ /dev/video3               0660   system     camera
+ /dev/video11              0660   system     system
+ /dev/video12              0660   system     system
+@@ -25,15 +25,11 @@
+ /dev/srp                  0660   system     audio
+ /dev/srp_ctrl             0660   system     audio
+ /dev/umts*                0660   system     radio
+-/dev/block/mmcblk0p7	  0660	 system	    radio
++/dev/block/mmcblk0p4	  0660	 system	    radio
+ 
+ # ipc / modem
+-/dev/block/mmcblk0p7      0660   system     root
+-/dev/block/mmcblk0p10     0660   system     radio
+-/dev/block/mmcblk0p4      0660   system     radio
+-/dev/block/mmcblk0p5      0660   system     radio
+-/dev/block/mmcblk0p6      0660   system     radio
+-/dev/block/mmcblk0p11     0660   system     radio
++/dev/block/mmcblk0p4      0660   system     root
++/dev/block/mmcblk0p7      0660   system     radio
+ /dev/mdm               0660   system     system
+ 
+ /dev/block/mmcblk1	  0660   root	    system

@@ -1,0 +1,2 @@
+N7100XXUFNE1 -> base
+I9300XXUGND3 -> zImage, /lib/modules[dhd.ko,scsi_wait.ko], /sbin/cbd + ArchiPort.patch
