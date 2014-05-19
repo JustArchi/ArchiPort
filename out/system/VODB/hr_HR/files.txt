@@ -1,0 +1,3 @@
+hr_HR-ak-cur.lite.res	def7afe97a088d446874df02d7cf5283	502058
+hr_HR.lang	02732bddc79763c8752368d1823c71eb	3846
+hr_HR-lk-text.lite.res	0df97210b2e27203c472fa84bfd5dc12	4303011

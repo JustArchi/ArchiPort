@@ -1,0 +1,3 @@
+ca_ES-ak-cur.lite.res	58181f7981f4dd85b6d6828225a249f8	522278
+ca_ES.lang	d4eba2095346a9ee25abd7fc8ba8ea91	3815
+ca_ES-lk-text.lite.res	eac9d7704e1554a59d4e7680e7588326	3157112

@@ -778,8 +778,17 @@
 			<package name="com.sec.knox.containeragent2" seinfo="platform" />
 			<package name="com.sec.knox.securehandler" seinfo="platform" />
 		</method>
-		
-		<method name="setIsMigrationFlow">
+
+		<method name="setPersonaStopRecovery">
+			<seinfo value="system" />
+			<seinfo value="release" />
+			<seinfo value="media" />
+			<seinfo value="platform" />
+			<seinfo value="shared" />
+			<package name="com.sec.knox.containeragent" seinfo="platform" />
+		</method>
+
+		<method name="getPersonaStopRecovery">
 			<seinfo value="system" />
 			<seinfo value="release" />
 			<seinfo value="media" />
@@ -788,14 +797,6 @@
 			<package name="com.sec.knox.containeragent" seinfo="platform" />
 		</method>
 		
-		<method name="getIsMigrationFlow">
-			<seinfo value="system" />
-			<seinfo value="release" />
-			<seinfo value="media" />
-			<seinfo value="platform" />
-			<seinfo value="shared" />
-			<package name="com.sec.knox.containeragent" seinfo="platform" />
-		</method>
 	</service>
 
 	<service name="RCPManagerService">
@@ -1152,6 +1153,15 @@
 			<seinfo value="platform" />
 			<seinfo value="shared" />
 			<agentType value="8" />
+		</method>
+		
+		<method name="changePermissionMigration">
+			<seinfo value="system" />
+			<seinfo value="release" />
+			<seinfo value="media" />
+			<seinfo value="platform" />
+			<seinfo value="shared" />
+			<package name="com.sec.knox.containeragent" seinfo="platform" />
 		</method>
 
 	</service>
@@ -2184,7 +2194,7 @@
 			<package name="com.sec.knox.containeragent2" seinfo="platform" />
 			<package name="com.sec.knox.securehandler" seinfo="platform" />
 		</method>
-	</service>
+			</service>
 
 
 	<service name="EnterprisePartitionManager">

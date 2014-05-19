@@ -1,0 +1,3 @@
+ko_KR_johab-ak-cur.lite.res	daf9861d29a51e989c9a4349cab1f0d2	6791894
+ko_KR_johab-lk-text.lite.res	d8598fec91290155e692b48e35c00c14	7512280
+ko_KR.lang	ce79e020530910f70cf99e1ef075338d	3942

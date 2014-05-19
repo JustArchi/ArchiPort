@@ -1,0 +1,3 @@
+hu_HU-ak-cur.lite.res	d74b565e26af8053b283684cb6719aa7	509586
+hu_HU.lang	e608553a3bf4707317d04ae7517c9214	3846
+hu_HU-lk-text.lite.res	55f4d8082ed1df7babe59b9cab923754	6562824

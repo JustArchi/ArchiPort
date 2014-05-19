@@ -1,0 +1,4 @@
+samsung_urdu.res	bd99cf0ecbafb3aae87d2f3c6176e4be	1063
+ur_PK-ak-cur.lite.res	d6fb89aff8f8fca6d908d5a47ec0c523	741650
+ur_PK.lang	5a51760f7afa0483abb5f29e3c813dd2	3974
+ur_PK-lk-text.lite.res	930400b73187888aa446649a76c7e224	3440811

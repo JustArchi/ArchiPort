@@ -1,0 +1,3 @@
+es_MX-ak-cur.lite.res	37233ae458dc58cce4e1cf3dfc7199bf	505442
+es_MX-lk-text.lite.res	de0e1db152031b405c3f94786519553b	4416944
+es_US.lang	95bf163ae41a21bfb03bde5994d32b47	3815

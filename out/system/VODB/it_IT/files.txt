@@ -1,0 +1,3 @@
+it_IT-ak-cur.lite.res	4ab180959db3fcd5cb8221bb3d1b01db	502858
+it_IT.lang	bb7502e4a356331f792bcf5d8185cb83	3846
+it_IT-lk-text.lite.res	24db3a2b1fb894339dfd2e4e74b0df90	4231096

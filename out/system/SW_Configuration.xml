@@ -1,0 +1,17 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<SW-Configuration>
+	<MobileData>
+	<PublicName>GT-N7100</PublicName>
+	</MobileData>
+	<CustomerDataSet>
+	<CSCName>N7100OXA</CSCName>
+	<CSCVersion>FNE1</CSCVersion>
+	<NbCustomer>6</NbCustomer>
+	<CustomerData src="/Customer/CPW/customer.xml" />
+	<CustomerData src="/Customer/DBT/customer.xml" />
+	<CustomerData src="/Customer/ITV/customer.xml" />
+	<CustomerData src="/Customer/XEO/customer.xml" />
+	<CustomerData src="/Customer/XEF/customer.xml" />
+	<CustomerData src="/Customer/BTU/customer.xml" />
+	</CustomerDataSet>
+</SW-Configuration>

@@ -113,7 +113,6 @@
 /system/app/DocumentsUI.apk
 /system/app/NotificationWidget.apk
 /system/app/Divx.apk
-/system/app/ChromeBookmarksSyncAdapter.apk
 /system/app/GoogleContactsSyncAdapter.apk
 /system/app/DigitalClock.apk
 /system/app/SecExchange.apk
@@ -181,8 +180,8 @@
 /system/app/PacProcessor.apk
 /system/app/SamsungDrmProvider.apk
 /system/priv-app/SecSettings.apk
-/system/priv-app/Samsungservice.apk
 /system/priv-app/SamsungLink18.apk
+/system/priv-app/Samsungservice.apk
 /system/priv-app/SecWallpaperChooser.apk
 /system/priv-app/SecPhone.apk
 /system/priv-app/S-Voice_Android_phone.apk
@@ -201,8 +200,8 @@
 /system/priv-app/GoogleLoginService.apk
 /system/priv-app/Lcdtest.apk
 /system/priv-app/SecVideoPlayerUpg.apk
-/system/priv-app/GoogleServicesFramework.apk
 /system/priv-app/SecLauncher2.apk
+/system/priv-app/GoogleServicesFramework.apk
 /system/priv-app/FactoryTest.apk
 /system/priv-app/Hearingdro_JU.apk
 /system/priv-app/SecCalendarProvider.apk

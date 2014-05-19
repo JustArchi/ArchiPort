@@ -1,0 +1,3 @@
+ru_RU-ak-cur.lite.res	c809b6def1c017f261ae2b175141f857	573254
+ru_RU.lang	f671c4793b0fd7acc858aec1df617bb3	3846
+ru_RU-lk-text.lite.res	51a7e43a72c06a985c56a06f501b0f97	4502536

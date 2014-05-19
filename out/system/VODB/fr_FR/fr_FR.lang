@@ -1,0 +1,165 @@
+Language-Version: 1.0
+Language-Name: fr_FR
+Configuration-Script:
+ AddResDir .
+ AddResDir ../mul
+
+Name: text
+Input-Type: MULTIPLE_LINE_TEXT
+Result-Item-Type: WORD
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource fr_FR-lk-text.lite.res
+ SetCharListSize 1
+ SetWordListSize 5
+ SetTextListSize 1
+
+Name: text_gesture
+Input-Type: MULTIPLE_LINE_TEXT
+Result-Item-Type: WORD
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource fr_FR-lk-text.lite.res
+ AddResource mul-lk-gesture.res
+ SetCharListSize 1
+ SetWordListSize 5
+ SetTextListSize 1
+
+Name: email
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource mul-lk-email.res
+ AddResource mul-sk-email.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: number
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource mul-lk-number.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: number_integer
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource mul-lk-number_integer.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: number_signed_integer
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource mul-lk-number_signed_integer.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: number_decimal
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource mul-lk-number_decimal.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: number_signed_decimal
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource mul-lk-number_signed_decimal.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: phone_number
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource mul-lk-phone_number.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: uri
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource mul-lk-uri.res
+ AddResource mul-sk-uri.res
+ AddResource mul-lk-ool.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: char
+Input-Type: SINGLE_CHARACTER
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: samsung_char
+Input-Type: MULTIPLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: true
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource fr_FR-lk-text.lite.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
+Name: math
+Input-Type: SINGLE_LINE_TEXT
+Result-Item-Type: CHARACTER
+Use-User-Dictionary: false
+Configuration-Script:
+ SetSpeedQualityCompromise 221
+ AddResource fr_FR-ak-cur.lite.res
+ AddResource mul-lk-math.res
+ SetCharListSize 5
+ SetWordListSize 1
+ SetTextListSize 1
+
