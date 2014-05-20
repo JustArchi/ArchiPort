@@ -1,9 +1,2 @@
 #! /bin/bash
-rm -rf SGS_Kitkat_Test.zip
-cp -R out temp
-cp -R temp/overlay/system temp/system
-rm -rf temp/overlay
-cd temp
-../_tools/7za a ../SGS_Kitkat_Test.zip *
-cd ..
-rm -rf temp
+_tools/7za.exe u -up0q0r2x2y2z1w2 -mx9 SGS_Kitkat_Test.zip "./out/*"
