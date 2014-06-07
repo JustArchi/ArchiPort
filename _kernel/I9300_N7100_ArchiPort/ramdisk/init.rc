@@ -208,10 +208,6 @@ on post-fs-data
 
     write /proc/apanic_console 1
 
-    #SideSync
-    chown system system /dev/android_ssusbcon
-    chmod 0660 /dev/android_ssusbcon
-
     # create basic filesystem structure
     mkdir /data/misc 01771 system misc
     mkdir /data/misc/audit 02775 audit system
@@ -810,12 +806,6 @@ service freshsebool /system/bin/freshsebool
     user root
     disabled
     oneshot
-
-service SIDESYNC_service /system/bin/ss_conn_daemon
-    class main
-    socket ss_conn_daemon stream 0666 system system
-    user system 
-    group inet net_raw
 
 # SAMSUNG DRS Service
 service drsd /system/bin/drsd
