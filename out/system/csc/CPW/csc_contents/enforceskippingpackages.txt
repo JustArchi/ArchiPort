@@ -1,4 +1,0 @@
-3
-VideoHub.apk
-SamsungWallet_Stub.apk
-secimsfw.apk
