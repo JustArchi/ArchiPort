@@ -1,0 +1,12 @@
+﻿<?xml  version="1.0" encoding="UTF-8" ?>
+<SamsungMobileFeauture>
+  <Version>ED001</Version>
+  <Country>GERMANY</Country>
+  <CountryISO>DE</CountryISO>
+  <SalesCode>DBT</SalesCode>
+  <FeatureSet>
+    <CscFeature_Web_EnableAutoSimHomeUrlInProfile>TRUE</CscFeature_Web_EnableAutoSimHomeUrlInProfile>
+    <CscFeature_Sip_ApplyAutoCorrectionPatent>true</CscFeature_Sip_ApplyAutoCorrectionPatent>
+    <CscFeature_NFC_DefaultCardModeConfig>DH</CscFeature_NFC_DefaultCardModeConfig>
+  </FeatureSet>
+</SamsungMobileFeauture>

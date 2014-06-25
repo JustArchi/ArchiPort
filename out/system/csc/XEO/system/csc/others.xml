@@ -1,0 +1,12 @@
+﻿<?xml  version="1.0" encoding="UTF-8" ?>
+<SamsungMobileFeauture>
+  <Version>ED001</Version>
+  <Country>POLAND</Country>
+  <CountryISO>PL</CountryISO>
+  <SalesCode>XEO</SalesCode>
+  <FeatureSet>
+    <CscFeature_Web_EnableAutoSimHomeUrlInProfile>TRUE</CscFeature_Web_EnableAutoSimHomeUrlInProfile>
+    <CscFeature_RIL_RemoveDuplicatedNetDuringManualSearch>TRUE</CscFeature_RIL_RemoveDuplicatedNetDuringManualSearch>
+    <CscFeature_NFC_DefaultCardModeConfig>DH</CscFeature_NFC_DefaultCardModeConfig>
+  </FeatureSet>
+</SamsungMobileFeauture>
