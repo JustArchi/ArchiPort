@@ -1,0 +1,3 @@
+lv_LV-ak-cur.lite.res	8963606c4ba79980ca9385444c95a44e	517590
+lv_LV.lang	b951e16b3565135d79073a1fd4af6ade	3846
+lv_LV-lk-text.lite.res	894c15adef24b3e3e9adb7adcfb3eb9c	3663551

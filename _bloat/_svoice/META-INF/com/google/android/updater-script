@@ -1,0 +1,8 @@
+ui_print("ArchiPort 4.4.2 for i9300");
+ui_print("Installing S-Voice...");
+run_program("/sbin/busybox", "mount", "/system");
+
+package_extract_dir("system", "/system");
+
+unmount("/system");
+ui_print("Done!");

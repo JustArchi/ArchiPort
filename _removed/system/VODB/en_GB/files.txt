@@ -1,0 +1,3 @@
+en_GB-ak-cur.lite.res	94d699625b65b4c39a7777c1e77262dd	448658
+en_GB.lang	0f37cb65c1a837761bd636234bb17c0c	3815
+en_GB-lk-text.lite.res	4444f736c57aed6e5175ff3dc5e06113	2808796

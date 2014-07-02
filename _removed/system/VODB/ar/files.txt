@@ -1,0 +1,4 @@
+ar-ak-cur.lite.res	d09d52396cf599c8f8d754f5aa2c2ad8	663678
+ar.lang	6cca5dff685f942ae7edd6b8f65168ca	3931
+ar-lk-text.lite.res	254f041225aea5d9494641a8d6bc3dff	4465048
+samsung_arabic.res	0b5c78e1a5e3d152207ab4652a50c6fb	855

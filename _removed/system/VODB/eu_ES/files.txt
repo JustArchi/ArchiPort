@@ -1,0 +1,3 @@
+eu_ES-ak-cur.lite.res	3bb06504055bd908cd6778aa326a27fc	497666
+eu_ES.lang	f2f783fbbc55924fbd6be604bd050a90	3846
+eu_ES-lk-text.lite.res	749981739680786c8080974dc4e1a6e4	4222235

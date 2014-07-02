@@ -1,0 +1,3 @@
+th_TH-ak-cur.lite.res	42917317c2cbcfbd615931cc4c851233	1005450
+th_TH.lang	148f9c35e571410c5066734bba64dbdc	3846
+th_TH-lk-text.lite.res	bba26cff4f850fe1a99c326414c68cae	4080107

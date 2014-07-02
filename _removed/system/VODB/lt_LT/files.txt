@@ -1,0 +1,3 @@
+lt_LT-ak-cur.lite.res	49ac013ef028d93754fc03a4a7440ac0	512426
+lt_LT.lang	35036aecd3793ea51aec8b82c6261934	3845
+lt_LT-lk-text.lite.res	807ba949e47ae460cdc608419d1974d7	4029279

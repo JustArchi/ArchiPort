@@ -1,0 +1,15 @@
+mul-lk-email.res	ddb3313256813b6172e34b878f6eaa50	11592
+mul-lk-gesture.res	cfd0162da5bce7e96e56fbececeeef1a	512
+mul-lk-math.res	0fd53b1668311eaa3878246fd644a484	76064
+mul-lk-number_decimal.res	3824729e648628c705a1d63b28005a5e	1636
+mul-lk-number_integer.res	155860e626344665a36917d89f67c166	1052
+mul-lk-number.res	281cf6c108d206550d9d90b852452b2f	3392
+mul-lk-number_signed_decimal.res	7398fc740c929ec975de8a604c132d7f	1708
+mul-lk-number_signed_integer.res	8bee20c6d6446840035bbce493ad6265	1116
+mul-lk-ool.res	67769666bd5b4a2acd06b6360b702695	652
+mul-lk-phone_number.res	5e80dcece4085678dee1e46dc0e03bd1	1876
+mul-lk-uri.res	09ecb64b32c21dbcf0cb43d34796c796	53168
+mul-sk-email.res	0e2aaa31c43bce762c62ce73329917e1	4503
+mul-sk-email-rtl.res	3ec15393bf60572d3c0896caca97f6be	5004
+mul-sk-uri.res	05988d1e2d766cc95b9ab89c0814f712	4384
+mul-sk-uri-rtl.res	0c1f556510c51a8cd4d22319db3ffc1d	4885

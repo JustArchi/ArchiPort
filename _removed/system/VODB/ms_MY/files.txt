@@ -1,0 +1,3 @@
+ms_MY-ak-cur.lite.res	9b51590107a5c82c356d01280fc45548	484710
+ms_MY.lang	a73ecba9892be77f77615d6d25b7840d	3846
+ms_MY-lk-text.lite.res	d0cfabae36907db107efb7024a82e73a	4403727

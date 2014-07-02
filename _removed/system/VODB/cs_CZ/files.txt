@@ -1,0 +1,3 @@
+cs_CZ-ak-cur.lite.res	30d1227d7fe37bddc21d4ce964b45d20	525374
+cs_CZ.lang	adbbc1160d6d8af62eb87b1c1cd54b6e	3815
+cs_CZ-lk-text.lite.res	932124acd69a9011c9b5cb07aef8ca36	4799400
