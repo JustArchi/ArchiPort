@@ -1,0 +1,8 @@
+#!/system/bin/sh
+
+swapoff /dev/block/zram0
+echo 1 > /sys/block/zram0/reset
+echo 268435456 > /sys/block/zram0/disksize
+echo 1 > /sys/block/zram0/initstate
+mkswap /dev/block/zram0
+swapon -p 2 /dev/block/zram0
