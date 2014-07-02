@@ -1,0 +1,46 @@
+/dev/mali                 0666   system     system
+/dev/ion                  0666   system     system
+/dev/ump                  0666   system     graphics
+/dev/exynos-mem           0660   system     graphics
+/dev/s3c-mfc              0660   media      graphics
+/dev/video0               0660   system     camera
+/dev/video1               0660   system     camera
+/dev/video2               0660   system     camera
+/dev/video3               0660   system     camera
+/dev/video11              0660   system     system
+/dev/video12              0660   system     system
+/dev/video16              0660   system     system
+/dev/video20              0660   system     system
+/dev/fimg2d               0660   system     graphics
+/dev/i2c-2                0660   system     system
+/dev/i2c-5                0660   system     system
+# HDMI DDC
+/dev/i2c-6                0660   system     system
+/dev/i2c-7                0660   system     system
+/dev/CEC                  0660   system     system
+/dev/HPD                  0660   system     system
+/dev/fmradio              0660   system     audio
+
+# ULP Audio
+/dev/srp                  0660   system     audio
+/dev/srp_ctrl             0660   system     audio
+/dev/umts*                0660   system     radio
+/dev/block/mmcblk0p4	  0660	 system	    radio
+
+# ipc / modem
+/dev/block/mmcblk0p4      0660   system     root
+/dev/block/mmcblk0p7      0660   system     radio
+/dev/mdm               0660   system     system
+
+/dev/block/mmcblk1	  0660   root	    system
+/dev/ttyUSB0              0660   system     system
+/dev/ttyUSB1              0660   system     radio
+/dev/ttyUSB2              0660   system     system
+/dev/hsic*                0660   system     radio
+/dev/usb/lp*              0660   system     usb
+/dev/ttyGS0              0660   system     system
+
+# sensor sysfs properties
+/sys/devices/virtual/input/input*   poll_delay  0660  system   radio
+# sensorhub
+/dev/ssp_sensorhub        0660   system     system
