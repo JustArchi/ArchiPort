@@ -1,3 +1,0 @@
-sk_SK-ak-cur.lite.res	e6803b32c8cfaca095df3c461e207237	535726
-sk_SK.lang	730a26b2960e57a4ec6b41f55860bfb3	3846
-sk_SK-lk-text.lite.res	1b3d2660aefc2a1a5c3f7f530be0ce43	4333807

@@ -1,3 +1,0 @@
-pl_PL-ak-cur.lite.res	4f5ad5e6857826974c47f43c0cc59f5e	509842
-pl_PL.lang	66ded75c6ce217db8776f766fe9bd273	3846
-pl_PL-lk-text.lite.res	6cc0a0b2ead3ae36ec56b62db350d4af	4703884

@@ -1,3 +1,0 @@
-gl_ES-ak-cur.lite.res	4415667bd5c1677300cf529f6e219739	502858
-gl_ES.lang	ad6b36a27c10cff20317d967b74cd28f	3846
-gl_ES-lk-text.lite.res	fa9ef59c77e5ed7f0ce91cd91f7883aa	3936999

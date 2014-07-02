@@ -4,14 +4,9 @@
 	<PublicName>GT-N7100</PublicName>
 	</MobileData>
 	<CustomerDataSet>
-	<CSCName>N7100OXA</CSCName>
+	<CSCName>N7100BTU</CSCName>
 	<CSCVersion>FNE1</CSCVersion>
-	<NbCustomer>6</NbCustomer>
-	<CustomerData src="/Customer/CPW/customer.xml" />
-	<CustomerData src="/Customer/DBT/customer.xml" />
-	<CustomerData src="/Customer/ITV/customer.xml" />
-	<CustomerData src="/Customer/XEO/customer.xml" />
-	<CustomerData src="/Customer/XEF/customer.xml" />
+	<NbCustomer>1</NbCustomer>
 	<CustomerData src="/Customer/BTU/customer.xml" />
 	</CustomerDataSet>
 </SW-Configuration>

@@ -2444,7 +2444,7 @@
 	<service name="SEAMS">
 
 		<method name="activateDomain">
-			<seinfo value="gsd" />
+			<seinfo value="good_trustonicpartner" />
 			<seinfo value="fixmo" />
 		</method>
 
@@ -2460,7 +2460,23 @@
 
 		<method name="getActivationStatus">
 			<seinfo value="gsd" />
+			<seinfo value="good_trustonicpartner" />
 			<seinfo value="fixmo" />
+		</method>
+
+		<method name="getSEContainerIDsFromPackageName">
+			<seinfo value="good_trustonicpartner" />
+			<seinfo value="gsd" />			
+		</method>
+
+		<method name="getPackageNamesFromSEContainer">
+			<seinfo value="good_trustonicpartner" />
+			<seinfo value="gsd" />			
+		</method>
+
+		<method name="getSEContainerIDs">
+			<seinfo value="good_trustonicpartner" />
+			<seinfo value="gsd" />
 		</method>
 
 		<method name="removeAppFromContainer">
@@ -2558,6 +2574,16 @@
 	<service name="CertificatePolicy">
 		<method name="notifyCertificateFailure">
 			<package name="com.android.chrome" seinfo="chrome" />
+		</method>
+	</service>
+	
+	<service name="knox_ccm_policy">
+		<method name="getSlotIdForPackage">
+			<seinfo value="system" />
+			<seinfo value="release" />
+			<seinfo value="media" />
+			<seinfo value="platform" />
+			<seinfo value="shared" />
 		</method>
 	</service>
 	

@@ -1,3 +1,0 @@
-he_IL-ak-cur.lite.res	be1cca67fd4c9bd6b0387cbefc12631f	517654
-he_IL.lang	bf113c75c7a81f2acf205ff3fc879ebb	3846
-he_IL-lk-text.lite.res	7b14df4049d8cbdf1e9a5b248334f4b5	5420824

@@ -1,198 +1,118 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml  version="1.0" encoding="UTF-8" ?>
 <CustomerData>
   <GeneralInfo>
-    <CSCEdition>ED0018</CSCEdition>
-    <Country>France</Country>
-    <CountryISO>FR</CountryISO>
+    <CSCEdition>ED019</CSCEdition>
+    <Country>UK &amp; IRE</Country>
+    <CountryISO>GB</CountryISO>
     <Region>EUR</Region>
-    <SalesCode>XEF</SalesCode>
-    <NbNetworkInfo>27</NbNetworkInfo>
+    <SalesCode>EUR</SalesCode>
+    <NbNetworkInfo>20</NbNetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20801</MCCMNC>
-      <NetworkName>Orange F</NetworkName>
+      <MCCMNC>23410</MCCMNC>
+      <NetworkName>O2 UK Pay Monthly</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20801</MCCMNC>
-      <NetworkName>Orange entreprises</NetworkName>
+      <MCCMNC>23410</MCCMNC>
+      <NetworkName>O2 UK Pay &amp; Go</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20815</MCCMNC>
-      <NetworkName>Free</NetworkName>
+      <MCCMNC>23433</MCCMNC>
+      <NetworkName>Orange UK</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20810</MCCMNC>
-      <NetworkName>F SFR</NetworkName>
+      <MCCMNC>23486</MCCMNC>
+      <NetworkName>Orange UK</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20811</MCCMNC>
-      <NetworkName>F SFR</NetworkName>
-      <SPName>F SFR</SPName>
+      <MCCMNC>00101</MCCMNC>
+      <NetworkName>Orange UK</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>64710</MCCMNC>
-      <NetworkName>SFR RU</NetworkName>
+      <MCCMNC>23430</MCCMNC>
+      <NetworkName>T-Mobile</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20820</MCCMNC>
-      <NetworkName>BOUYGTEL</NetworkName>
+      <MCCMNC>23430</MCCMNC>
+      <NetworkName>Virgin</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20601</MCCMNC>
-      <NetworkName>Proximus</NetworkName>
+      <MCCMNC>23415</MCCMNC>
+      <NetworkName>Vodafone Contract</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20810</MCCMNC>
-      <NetworkName>NRJ (SFR)</NetworkName>
+      <MCCMNC>23410</MCCMNC>
+      <NetworkName>TESCO</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20826</MCCMNC>
-      <NetworkName>NRJ (FMVNO)</NetworkName>
+      <MCCMNC>23415</MCCMNC>
+      <NetworkName>Vodafone PAYG</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20823</MCCMNC>
-      <NetworkName>Virgin (OMEA)</NetworkName>
+      <MCCMNC>23415</MCCMNC>
+      <NetworkName>BT Mobile</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20801</MCCMNC>
-      <NetworkName>Virgin Mobile</NetworkName>
+      <MCCMNC>23420</MCCMNC>
+      <NetworkName>H3G</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20801</MCCMNC>
-      <NetworkName>Tele2</NetworkName>
+      <MCCMNC>23415</MCCMNC>
+      <NetworkName>Asda</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20810</MCCMNC>
-      <NetworkName>Auchan</NetworkName>
+      <MCCMNC>27201</MCCMNC>
+      <NetworkName>Vodafone IE</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20801</MCCMNC>
-      <NetworkName>Carrefour</NetworkName>
+      <MCCMNC>27202</MCCMNC>
+      <NetworkName>O2 IRL</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20801</MCCMNC>
-      <NetworkName>NRJ (ORANGE)</NetworkName>
+      <MCCMNC>27203</MCCMNC>
+      <NetworkName>Meteor</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>34001</MCCMNC>
-      <NetworkName>Orange (340 01)</NetworkName>
+      <MCCMNC>27205</MCCMNC>
+      <NetworkName>H3G IE</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>64700</MCCMNC>
-      <NetworkName>Orange (647 00)</NetworkName>
+      <MCCMNC>27211</MCCMNC>
+      <NetworkName>Tesco Mobile Ireland</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20810</MCCMNC>
-      <NetworkName>Simplicime</NetworkName>
+      <MCCMNC>23415</MCCMNC>
+      <NetworkName>Talk Mobile Contract</NetworkName>
     </NetworkInfo>
     <NetworkInfo>
-      <MCCMNC>20810</MCCMNC>
-      <NetworkName>Leclerc</NetworkName>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>34020</MCCMNC>
-      <NetworkName>Digicel</NetworkName>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>20810</MCCMNC>
-      <NetworkName>CORIOLIS</NetworkName>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>64710</MCCMNC>
-      <NetworkName>CORIOLIS</NetworkName>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>20810</MCCMNC>
-      <NetworkName>Keyyo Mobile</NetworkName>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>20810</MCCMNC>
-      <NetworkName>La Poste Mobile</NetworkName>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>20810</MCCMNC>
-      <NetworkName>LTI telecom</NetworkName>
-    </NetworkInfo>
-    <NetworkInfo>
-      <MCCMNC>20810</MCCMNC>
-      <NetworkName>Darty Mobile</NetworkName>
+      <MCCMNC>23415</MCCMNC>
+      <NetworkName>Talk Mobile PAYG</NetworkName>
     </NetworkInfo>
   </GeneralInfo>
   <Settings>
     <Main>
-      <Security>
-        <NbNetworkLock>62</NbNetworkLock>
-        <NetworkLock>460BB</NetworkLock>
-        <NetworkLock>250BB</NetworkLock>
-        <NetworkLock>255BB</NetworkLock>
-        <NetworkLock>502BB</NetworkLock>
-        <NetworkLock>510BB</NetworkLock>
-        <NetworkLock>401BB</NetworkLock>
-        <NetworkLock>525BB</NetworkLock>
-        <NetworkLock>452BB</NetworkLock>
-        <NetworkLock>505BB</NetworkLock>
-        <NetworkLock>515BB</NetworkLock>
-        <NetworkLock>470BB</NetworkLock>
-        <NetworkLock>404BB</NetworkLock>
-        <NetworkLock>405BB</NetworkLock>
-        <NetworkLock>603BB</NetworkLock>
-        <NetworkLock>602BB</NetworkLock>
-        <NetworkLock>432BB</NetworkLock>
-        <NetworkLock>604BB</NetworkLock>
-        <NetworkLock>416BB</NetworkLock>
-        <NetworkLock>424BB</NetworkLock>
-        <NetworkLock>425BB</NetworkLock>
-        <NetworkLock>724BB</NetworkLock>
-        <NetworkLock>370BB</NetworkLock>
-        <NetworkLock>338BB</NetworkLock>
-        <NetworkLock>374BB</NetworkLock>
-        <NetworkLock>706BB</NetworkLock>
-        <NetworkLock>734BB</NetworkLock>
-        <NetworkLock>714BB</NetworkLock>
-        <NetworkLock>712BB</NetworkLock>
-        <NetworkLock>740BB</NetworkLock>
-        <NetworkLock>704BB</NetworkLock>
-        <NetworkLock>708BB</NetworkLock>
-        <NetworkLock>710BB</NetworkLock>
-        <NetworkLock>744BB</NetworkLock>
-        <NetworkLock>748BB</NetworkLock>
-        <NetworkLock>736BB</NetworkLock>
-        <NetworkLock>621BB</NetworkLock>
-        <NetworkLock>620BB</NetworkLock>
-        <NetworkLock>639BB</NetworkLock>
-        <NetworkLock>286BB</NetworkLock>
-        <NetworkLock>429BB</NetworkLock>
-        <NetworkLock>413BB</NetworkLock>
-        <NetworkLock>454BB</NetworkLock>
-        <NetworkLock>259BB</NetworkLock>
-        <NetworkLock>437BB</NetworkLock>
-        <NetworkLock>438BB</NetworkLock>
-        <NetworkLock>436BB</NetworkLock>
-        <NetworkLock>428BB</NetworkLock>
-        <NetworkLock>400BB</NetworkLock>
-        <NetworkLock>282BB</NetworkLock>
-        <NetworkLock>283BB</NetworkLock>
-        <NetworkLock>412BB</NetworkLock>
-        <NetworkLock>520BB</NetworkLock>
-        <NetworkLock>456BB</NetworkLock>
-        <NetworkLock>414BB</NetworkLock>
-        <NetworkLock>457BB</NetworkLock>
-        <NetworkLock>606BB</NetworkLock>
-        <NetworkLock>420BB</NetworkLock>
-        <NetworkLock>418BB</NetworkLock>
-        <NetworkLock>732BB</NetworkLock>
-        <NetworkLock>722BB</NetworkLock>
-        <NetworkLock>730BB</NetworkLock>
-        <NetworkLock>716BB</NetworkLock>
-      </Security>
       <Network>
+        <NbFastDormancy>2</NbFastDormancy>
+        <FastDormancy>
+          <NetworkName>O2 UK Pay Monthly</NetworkName>
+          <FastDormancyEnableStatus>off</FastDormancyEnableStatus>
+        </FastDormancy>
+        <FastDormancy>
+          <NetworkName>O2 UK Pay &amp; Go</NetworkName>
+          <FastDormancyEnableStatus>off</FastDormancyEnableStatus>
+        </FastDormancy>
+		<NbWbAmr>1</NbWbAmr>
+        <WbAmr>
+          <NetworkName>default</NetworkName>
+          <WbAmrCodec>on</WbAmrCodec>
+        </WbAmr>
         <AutoProfile>on</AutoProfile>
         <AutoVoicemail>off</AutoVoicemail>
         <AutoEmailAccount>off</AutoEmailAccount>
         <AutoBookmark>off</AutoBookmark>
         <AutoLink>off</AutoLink>
         <AutoSyncML>off</AutoSyncML>
-        <AutoFastDormancy>off</AutoFastDormancy>
-        <AutoWbAmr>off</AutoWbAmr>
+        <AutoFastDormancy>on</AutoFastDormancy>
+        <AutoWbAmr>on</AutoWbAmr>
         <AutoFOTA>off</AutoFOTA>
       </Network>
       <Sound>
@@ -202,1260 +122,381 @@
         </ExtraSound>
       </Sound>
       <Phone>
-        <DefLanguage>fr_FR</DefLanguage>
-        <DefLanguageNoSIM>fr_FR</DefLanguageNoSIM>
+        <DefLanguage>english</DefLanguage>
+        <DefLanguageNoSIM>english</DefLanguageNoSIM>
         <T9Enabling>enable</T9Enabling>
-        <T9Language>french</T9Language>
         <DateTimeFormat>
           <DateFormat>ddmmyyyy</DateFormat>
-          <TimeFormat>24h</TimeFormat>
+          <TimeFormat>12h</TimeFormat>
         </DateTimeFormat>
       </Phone>
+      <Security />
     </Main>
-    <Contact>
-      <ContactSort>firstname</ContactSort>
-    </Contact>
     <Messages>
+      <NbVoicemail>1</NbVoicemail>
+      <Voicemail>
+        <NetworkName>Orange UK</NetworkName>
+        <VoicemailName>Voicemail</VoicemailName>
+        <TelNum>123</TelNum>
+      </Voicemail>
       <SMS>
         <DeliveryReport>off</DeliveryReport>
-        <MsgTypeThreshold>
-          <ThresholdValue>10</ThresholdValue>
-          <ThresholdType>pagecount</ThresholdType>
-        </MsgTypeThreshold>
-        <MaxRecipient>10</MaxRecipient>
         <CharSupport>gsmalpha</CharSupport>
+        <SSMS>off</SSMS>
       </SMS>
       <MMS>
         <MmsSending>
           <ReqDeliveryRep>off</ReqDeliveryRep>
           <ReqReadRep>off</ReqReadRep>
-          <MessageSize>300</MessageSize>
           <CreationMode>free</CreationMode>
         </MmsSending>
         <MmsReceiving>
           <Home>auto</Home>
           <Roaming>manual</Roaming>
+          <SendReadRep>prompt</SendReadRep>
         </MmsReceiving>
       </MMS>
       <Email>
         <EmailReceiving>
+          <AutoPoll>off</AutoPoll>
           <KeepServer>on</KeepServer>
         </EmailReceiving>
-        <NbAccount>4</NbAccount>
+        <NbAccount>5</NbAccount>
         <Account>
-          <NetworkName>default</NetworkName>
-          <AccountName>yahoo.fr</AccountName>
-          <EmailAddr>@yahoo.fr</EmailAddr>
-          <LoginType>domain_type</LoginType>
+          <NetworkName>Vodafone Contract</NetworkName>
+          <AccountName>Vodafone My Mail</AccountName>
+          <EmailAddr>my@email.vodafone.co.uk</EmailAddr>
           <Incoming>
             <MailboxType>imap4</MailboxType>
-            <ServAddr>imap.mail.yahoo.com</ServAddr>
-            <Port>993</Port>
-            <Secure>ssl</Secure>
+            <ServAddr>mail.uk.sp.vodafone.com</ServAddr>
+            <Port>143</Port>
+            <Secure>off</Secure>
           </Incoming>
           <Outgoing>
-            <ServAddr>smtp.mail.yahoo.com</ServAddr>
-            <Port>465</Port>
-            <SmtpAuth>on</SmtpAuth>
-            <Secure>ssl+trustallcerts</Secure>
+            <ServAddr>smtp.uk.sp.vodafone.com</ServAddr>
+            <Port>25</Port>
+            <SmtpAuth>off</SmtpAuth>
+            <Secure>off</Secure>
           </Outgoing>
         </Account>
         <Account>
-          <NetworkName>default</NetworkName>
-          <AccountName>hotmail.fr</AccountName>
-          <EmailAddr>@hotmail.fr</EmailAddr>
+          <NetworkName>O2 UK Pay Monthly</NetworkName>
+          <AccountName>O2 Email</AccountName>
+          <EmailAddr>changeme@o2.co.uk</EmailAddr>
           <LoginType>domain_type</LoginType>
           <Incoming>
             <MailboxType>pop3</MailboxType>
-            <ServAddr>pop3.live.com</ServAddr>
-            <Port>995</Port>
-            <Secure>ssl+trustallcerts</Secure>
+            <ServAddr>mail.o2.co.uk</ServAddr>
+            <Port>110</Port>
+            <Secure>off</Secure>
           </Incoming>
           <Outgoing>
-            <ServAddr>smtp.live.com</ServAddr>
-            <Port>587</Port>
+            <ServAddr>smtp.o2.co.uk</ServAddr>
+            <Port>25</Port>
             <SmtpAuth>on</SmtpAuth>
-            <Secure>tls</Secure>
+            <Secure>off</Secure>
           </Outgoing>
         </Account>
         <Account>
-          <NetworkName>default</NetworkName>
-          <AccountName>yahoo.com</AccountName>
-          <EmailAddr>@yahoo.com</EmailAddr>
-          <LoginType>domain_type</LoginType>
-          <Incoming>
-            <MailboxType>imap4</MailboxType>
-            <ServAddr>imap.mail.yahoo.com</ServAddr>
-            <Port>993</Port>
-            <Secure>ssl+trustallcerts</Secure>
-          </Incoming>
-          <Outgoing>
-            <ServAddr>smtp.mail.yahoo.com</ServAddr>
-            <Port>465</Port>
-            <SmtpAuth>on</SmtpAuth>
-            <Secure>ssl+trustallcerts</Secure>
-          </Outgoing>
-        </Account>
-        <Account>
-          <NetworkName>default</NetworkName>
-          <AccountName>hotmail.com</AccountName>
-          <EmailAddr>@hotmail.com</EmailAddr>
-          <LoginType>domain_type</LoginType>
+          <NetworkName>Orange UK</NetworkName>
+          <AccountName>Orange e-mail</AccountName>
           <Incoming>
             <MailboxType>pop3</MailboxType>
-            <ServAddr>pop3.live.com</ServAddr>
-            <Port>995</Port>
-            <Secure>ssl+trustallcerts</Secure>
+            <ServAddr>pop.orange.net</ServAddr>
+            <Port>110</Port>
+            <Secure>off</Secure>
           </Incoming>
           <Outgoing>
-            <ServAddr>smtp.live.com</ServAddr>
-            <Port>587</Port>
-            <SmtpAuth>on</SmtpAuth>
-            <Secure>tls</Secure>
+            <ServAddr>smtp.orange.net</ServAddr>
+            <Port>25</Port>
+            <SmtpAuth>off</SmtpAuth>
+            <Secure>off</Secure>
+          </Outgoing>
+        </Account>
+        <Account>
+          <NetworkName>Vodafone IE</NetworkName>
+          <AccountName>Vodafone Mail</AccountName>
+          <EmailAddr>@vodafone.ie</EmailAddr>
+          <Incoming>
+            <MailboxType>pop3</MailboxType>
+            <ServAddr>pop.vodafone.ie</ServAddr>
+            <Port>110</Port>
+            <Secure>off</Secure>
+          </Incoming>
+          <Outgoing>
+            <ServAddr>mail.vodafone.ie</ServAddr>
+            <Port>25</Port>
+            <SmtpAuth>off</SmtpAuth>
+            <Secure>off</Secure>
+          </Outgoing>
+        </Account>
+        <Account>
+          <NetworkName>O2 IRL</NetworkName>
+          <AccountName>O2 IE Email</AccountName>
+          <Incoming>
+            <MailboxType>pop3</MailboxType>
+            <ServAddr>pop3.o2.ie</ServAddr>
+            <Port>110</Port>
+            <Secure>off</Secure>
+          </Incoming>
+          <Outgoing>
+            <ServAddr>smtp.o2.ie</ServAddr>
+            <Port>25</Port>
+            <SmtpAuth>off</SmtpAuth>
+            <Secure>off</Secure>
           </Outgoing>
         </Account>
       </Email>
     </Messages>
-    <Multimedia>
-      <Camera>
-        <ShutterSound>off</ShutterSound>
-      </Camera>
-    </Multimedia>
-    <NbFOTA>25</NbFOTA>
-    <FOTA>
-      <NetworkName>Orange F</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Orange entreprises</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Free</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>F SFR</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>SFR RU</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>BOUYGTEL</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Proximus</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>NRJ (SFR)</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>NRJ (FMVNO)</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Virgin (OMEA)</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Virgin Mobile</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Tele2</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Auchan</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Carrefour</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>NRJ (ORANGE)</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Orange (340 01)</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Orange (647 00)</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Simplicime</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Leclerc</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Digicel</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>CORIOLIS</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Keyyo Mobile</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>La Poste Mobile</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>LTI telecom</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
-    <FOTA>
-      <NetworkName>Darty Mobile</NetworkName>
-      <FotaBearer>wifi_dedicated</FotaBearer>
-    </FOTA>
     <Browser>
-      <NbBookmark>3</NbBookmark>
+      <NbBookmark>6</NbBookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
         <Index>1</Index>
-        <BookmarkName>Samsung</BookmarkName>
-        <URL>http://www.samsung.com</URL>
+        <BookmarkName>Games</BookmarkName>
+        <URL>http://wap.uk.samsungmobile.com/bm/games</URL>
       </Bookmark>
       <Bookmark>
         <NetworkName>default</NetworkName>
         <Editable>yes</Editable>
+        <Index>2</Index>
+        <BookmarkName>Ringtones</BookmarkName>
+        <URL>http://wap.uk.samsungmobile.com/bm/ringtones</URL>
+      </Bookmark>
+      <Bookmark>
+        <NetworkName>default</NetworkName>
+        <Editable>yes</Editable>
+        <Index>3</Index>
+        <BookmarkName>Screensavers</BookmarkName>
+        <URL>http://wap.uk.samsungmobile.com/bm/screensavers</URL>
+      </Bookmark>
+      <Bookmark>
+        <NetworkName>default</NetworkName>
+        <Editable>yes</Editable>
+        <Index>4</Index>
+        <BookmarkName>Videos</BookmarkName>
+        <URL>http://wap.uk.samsungmobile.com/bm/videos</URL>
+      </Bookmark>
+      <Bookmark>
+        <NetworkName>default</NetworkName>
+        <Editable>yes</Editable>
+        <Index>5</Index>
+        <BookmarkName>Wallpapers</BookmarkName>
+        <URL>http://wap.uk.samsungmobile.com/bm/wallpapers</URL>
+      </Bookmark>
+      <Bookmark>
+        <NetworkName>default</NetworkName>
+        <Editable>yes</Editable>
+        <Index>6</Index>
         <BookmarkName>Yahoo!</BookmarkName>
-        <URL>https://yahoo.com/?tsrc=samsungbm</URL>
-      </Bookmark>
-      <Bookmark>
-        <NetworkName>default</NetworkName>
-        <Editable>yes</Editable>
-        <BookmarkName>Bing</BookmarkName>
-        <URL>http://www.bing.com/?PC=SMSM&amp;FORM=MBDPB</URL>
+        <URL>http://m.yahoo.com/?tsrc=samsungbm</URL>
       </Bookmark>
       <eManual>
         <URL>http://www.samsung.com/m-manual/common</URL>
       </eManual>
     </Browser>
     <Connections>
-      <NbProfileHandle>25</NbProfileHandle>
+      <NbProfileHandle>18</NbProfileHandle>
       <ProfileHandle>
-        <NbNetProfile>3</NbNetProfile>
-        <NetworkName>Orange F</NetworkName>
-        <ProfBrowser>Orange World</ProfBrowser>
-        <ProfMMS>Orange MMS</ProfMMS>
-        <ProfIntSharing>Orange Internet</ProfIntSharing>
-      </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>3</NbNetProfile>
-        <NetworkName>Orange entreprises</NetworkName>
-        <ProfBrowser>Orange entreprises</ProfBrowser>
-        <ProfMMS>Orange MMS</ProfMMS>
-        <ProfIntSharing>Internet Entreprise</ProfIntSharing>
+        <NbNetProfile>2</NbNetProfile>
+        <NetworkName>Vodafone Contract</NetworkName>
+        <ProfBrowser>Vodafone Contract Internet</ProfBrowser>
+        <ProfMMS>Vodafone Contract MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Free</NetworkName>
-        <ProfBrowser>Free</ProfBrowser>
-        <ProfMMS>Free MMS</ProfMMS>
-      </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>3</NbNetProfile>
-        <NetworkName>F SFR</NetworkName>
-        <ProfBrowser>SFR webphone</ProfBrowser>
-        <ProfMMS>SFR MMS</ProfMMS>
-        <ProfIntSharing>SFR option modem</ProfIntSharing>
-      </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>4</NbNetProfile>
-        <NetworkName>SFR RU</NetworkName>
-        <ProfBrowser>SRR Full Internet</ProfBrowser>
-        <ProfMMS>SRR MMS</ProfMMS>
-        <ProfAGPS>SRR WAP</ProfAGPS>
-        <ProfIntSharing>SRR WEB</ProfIntSharing>
+        <NetworkName>Vodafone PAYG</NetworkName>
+        <ProfBrowser>Vodafone PAYG Internet</ProfBrowser>
+        <ProfMMS>Vodafone PAYG MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>BOUYGTEL</NetworkName>
-        <ProfBrowser>Bouygues Internet</ProfBrowser>
-        <ProfMMS>Bouygues MMS</ProfMMS>
-      </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>3</NbNetProfile>
-        <NetworkName>NRJ (SFR)</NetworkName>
-        <ProfBrowser>NRJWEB</ProfBrowser>
-        <ProfMMS>NRJMMS</ProfMMS>
-        <ProfIntSharing>Internet NRJ</ProfIntSharing>
+        <NetworkName>O2 UK Pay Monthly</NetworkName>
+        <ProfBrowser>O2 Mobile Web</ProfBrowser>
+        <ProfMMS>O2 Pay Monthly MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>NRJ (FMVNO)</NetworkName>
-        <ProfBrowser>NRJWEB</ProfBrowser>
-        <ProfMMS>NRJMMS</ProfMMS>
+        <NetworkName>O2 UK Pay &amp; Go</NetworkName>
+        <ProfBrowser>O2 Pay &amp; Go Internet</ProfBrowser>
+        <ProfMMS>O2 Pay &amp; Go MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Proximus</NetworkName>
-        <ProfBrowser>Proximus Web</ProfBrowser>
-        <ProfMMS>Proximus MMS</ProfMMS>
+        <NetworkName>Orange UK</NetworkName>
+        <ProfBrowser>Orange UK Internet</ProfBrowser>
+        <ProfMMS>Orange UK MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Virgin Mobile</NetworkName>
-        <ProfBrowser>VM WAP</ProfBrowser>
-        <ProfMMS>VM MMS</ProfMMS>
+        <NetworkName>T-Mobile</NetworkName>
+        <ProfBrowser>T-Mobile Internet</ProfBrowser>
+        <ProfMMS>T-Mobile PictureMessage</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Virgin (OMEA)</NetworkName>
-        <ProfBrowser>Virgin mobile</ProfBrowser>
-        <ProfMMS>VM MMS</ProfMMS>
+        <NetworkName>Virgin</NetworkName>
+        <ProfBrowser>Virgin Media Mobile Internet</ProfBrowser>
+        <ProfMMS>VM Picture messaging</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Tele2</NetworkName>
-        <ProfBrowser>Tele2 WAP</ProfBrowser>
-        <ProfMMS>Tele2 MMS</ProfMMS>
+        <NetworkName>BT Mobile</NetworkName>
+        <ProfBrowser>BT Mobile Internet</ProfBrowser>
+        <ProfMMS>BT Mobile MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Carrefour</NetworkName>
-        <ProfBrowser>Carrefour WAP</ProfBrowser>
-        <ProfMMS>Carrefour MMS</ProfMMS>
+        <NetworkName>TESCO</NetworkName>
+        <ProfBrowser>TESCO Mobile</ProfBrowser>
+        <ProfMMS>TESCO MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Auchan</NetworkName>
-        <ProfBrowser>Auchan WAP</ProfBrowser>
-        <ProfMMS>Auchan MMS</ProfMMS>
+        <NetworkName>Vodafone IE</NetworkName>
+        <ProfBrowser>Vodafone IE Live!</ProfBrowser>
+        <ProfMMS>Vodafone IE MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>NRJ (ORANGE)</NetworkName>
-        <ProfBrowser>NRJWEB</ProfBrowser>
-        <ProfMMS>NRJMMS</ProfMMS>
+        <NetworkName>Tesco Mobile Ireland</NetworkName>
+        <ProfBrowser>Tesco Mobile Internet</ProfBrowser>
+        <ProfMMS>Tesco MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Orange (340 01)</NetworkName>
-        <ProfBrowser>Orange World Caraïbe</ProfBrowser>
-        <ProfMMS>Orange MMS Caraïbe</ProfMMS>
+        <NetworkName>O2 IRL</NetworkName>
+        <ProfBrowser>O2.ie Mobile Internet</ProfBrowser>
+        <ProfMMS>O2.ie MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Orange (647 00)</NetworkName>
-        <ProfBrowser>Orange World re</ProfBrowser>
-        <ProfMMS>Orange MMS Réunion</ProfMMS>
+        <NetworkName>Meteor</NetworkName>
+        <ProfBrowser>Meteor Data</ProfBrowser>
+        <ProfMMS>Meteor MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Simplicime</NetworkName>
-        <ProfBrowser>WAP Simplicime</ProfBrowser>
-        <ProfMMS>MMS Simplicime</ProfMMS>
+        <NetworkName>H3G</NetworkName>
+        <ProfBrowser>3 WAP</ProfBrowser>
+        <ProfMMS>3 MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Leclerc</NetworkName>
-        <ProfBrowser>WAP LeclercMobile</ProfBrowser>
-        <ProfMMS>MMS LeclercMobile</ProfMMS>
+        <NetworkName>Asda</NetworkName>
+        <ProfBrowser>Asda WAP</ProfBrowser>
+        <ProfMMS>Asda MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Digicel</NetworkName>
-        <ProfBrowser>Digicel FR Web</ProfBrowser>
-        <ProfMMS>Digicel FR MMS</ProfMMS>
+        <NetworkName>Talk Mobile Contract</NetworkName>
+        <ProfBrowser>Talkmob Internet</ProfBrowser>
+        <ProfMMS>Talkmob MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>CORIOLIS</NetworkName>
-        <ProfBrowser>Coriolis web</ProfBrowser>
-        <ProfMMS>Coriolis MMS</ProfMMS>
+        <NetworkName>Talk Mobile PAYG</NetworkName>
+        <ProfBrowser>Talkmob PAYG Int</ProfBrowser>
+        <ProfMMS>Talkmob PAYG MMS</ProfMMS>
       </ProfileHandle>
       <ProfileHandle>
         <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Keyyo Mobile</NetworkName>
-        <ProfBrowser>Keyyo Mobile Internet</ProfBrowser>
-        <ProfMMS>Keyyo Mobile MMS</ProfMMS>
+        <NetworkName>H3G IE</NetworkName>
+        <ProfBrowser>H3G IE WAP</ProfBrowser>
+        <ProfMMS>H3G IE MMS</ProfMMS>
       </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>2</NbNetProfile>
-        <NetworkName>La Poste Mobile</NetworkName>
-        <ProfBrowser>WEB La Poste Mobile</ProfBrowser>
-        <ProfMMS>MMS La Poste Mobile</ProfMMS>
-      </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>2</NbNetProfile>
-        <NetworkName>LTI telecom</NetworkName>
-        <ProfBrowser>wap12</ProfBrowser>
-        <ProfMMS>mms12</ProfMMS>
-      </ProfileHandle>
-      <ProfileHandle>
-        <NbNetProfile>2</NbNetProfile>
-        <NetworkName>Darty Mobile</NetworkName>
-        <ProfBrowser>Darty Surf&amp;Mail</ProfBrowser>
-        <ProfMMS>DARTY MMS</ProfMMS>
-      </ProfileHandle>
-      <NbProfile>57</NbProfile>
+      <NbProfile>36</NbProfile>
       <Profile>
-        <NetworkName>Orange F</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Orange World</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>orange</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Orange F</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Orange Internet</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>orange.fr</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Orange entreprises</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Orange entreprises</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
+        <NetworkName>Vodafone Contract</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Vodafone Contract MMS</ProfileName>
+        <URL>http://mms.vodafone.co.uk/servlets/mms</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>172.016.002.008</ServAddr>
-          <Port>8000</Port>
+          <ServAddr>212.183.137.12</ServAddr>
+          <Port>8799</Port>
         </Proxy>
         <PSparam>
-          <APN>orange-mib</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Orange entreprises</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Internet Entreprise</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>Internet-entreprise</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Orange F</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Orange MMS</ProfileName>
-        <URL>http://mms.orange.fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.10.200</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>orange.acte</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Orange entreprises</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Orange MMS</ProfileName>
-        <URL>http://mms.orange.fr/</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.10.200</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>orange.acte</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Free</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Free</ProfileName>
-        <URL>http://mobile.free.fr</URL>
-        <Auth>none</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>free</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Free</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Free MMS</ProfileName>
-        <URL>http://212.27.40.225</URL>
-        <Auth>none</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>mmsfree</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>F SFR</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>SFR webphone</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>sl2sfr</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>F SFR</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>SFR MMS</ProfileName>
-        <URL>http://mms1</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.151.0.1</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>mmssfr</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>F SFR</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>SFR option modem</ProfileName>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>websfr</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>SFR RU</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>SRR Full Internet</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>sl2sfr</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>SFR RU</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>SRR WAP</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.0.224.161</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>wapsfr</APN>
+          <APN>wap.vodafone.co.uk</APN>
           <UserId>wap</UserId>
           <Password>wap</Password>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>SFR RU</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>SRR MMS</ProfileName>
-        <URL>http://mms</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.0.224.145</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>mmssfr</APN>
-          <UserId>mms</UserId>
-          <Password>mms</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>SFR RU</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>SRR WEB</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>websfr</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>BOUYGTEL</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Bouygues Internet</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>mmsbouygtel.com</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>BOUYGTEL</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Bouygues MMS</ProfileName>
-        <URL>http://mms.bouyguestelecom.fr/mms/wapenc</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>62.201.129.226</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>mmsbouygtel.com</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>NRJ (SFR)</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>NRJWEB</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-          <Port>0</Port>
-        </Proxy>
-        <PSparam>
-          <APN>fnetnrj</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>NRJ (SFR)</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>NRJMMS</ProfileName>
-        <URL>http://mmsnrj</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.143.156.5</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>mmsnrj</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>NRJ (SFR)</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Internet NRJ</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-          <Port>0</Port>
-        </Proxy>
-        <PSparam>
-          <APN>internetnrj</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>NRJ (FMVNO)</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>NRJWEB</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-          <Port>0</Port>
-        </Proxy>
-        <PSparam>
-          <APN>fnetnrj</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>NRJ (FMVNO)</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>NRJMMS</ProfileName>
-        <URL>http://mmsnrj</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.143.156.5</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>mmsnrj</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Proximus</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Proximus Web</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <PSparam>
-          <APN>internet.proximus.be</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Proximus</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Proximus MMS</ProfileName>
-        <URL>http://mmsc.proximus.be/mms</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.55.14.75</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>event.proximus.be</APN>
-          <UserId>mms</UserId>
-          <Password>mms</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Virgin Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>VM WAP</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>ofnew.fr</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Virgin Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>VM MMS</ProfileName>
-        <URL>http://mms.orange.fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.10.200</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>orange.acte</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Virgin (OMEA)</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Virgin mobile</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.6.10.1</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>virgin-mobile.fr</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Virgin (OMEA)</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>VM MMS</ProfileName>
-        <URL>http://mmc.omeatelecom.fr/servlets/mms</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.6.10.1</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>virgin-mobile.fr</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Tele2</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Tele2 WAP</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>ofnew.fr</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Tele2</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Tele2 MMS</ProfileName>
-        <URL>http://mms.orange.fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.10.200</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>orange.acte</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Carrefour</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Carrefour WAP</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>ofnew.fr</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Carrefour</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Carrefour MMS</ProfileName>
-        <URL>http://mms.orange.fr/</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.10.200</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>orange.acte</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Auchan</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Auchan WAP</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.21.8</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>wap65</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Auchan</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Auchan MMS</ProfileName>
-        <URL>http://mms65</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.143.156.8</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>mms65</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>NRJ (ORANGE)</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>NRJWEB</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-          <Port>0</Port>
-        </Proxy>
-        <PSparam>
-          <APN>ofnew.fr</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>NRJ (ORANGE)</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>NRJMMS</ProfileName>
-        <URL>http://mms.orange.fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.10.200</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>orange.acte</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Orange (340 01)</NetworkName>
+        <NetworkName>Vodafone Contract</NetworkName>
         <Editable>no</Editable>
-        <ProfileName>Orange World Caraïbe</ProfileName>
-        <URL>http://3g.orangecaraibe.com/</URL>
+        <ProfileName>Vodafone Contract Internet</ProfileName>
+        <URL>http://wap.uk.samsungmobile.com/vodafone</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
         <PSparam>
-          <APN>orangeweb</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Orange (340 01)</NetworkName>
-        <Editable>no</Editable>
-        <ProfileName>Orange MMS Caraïbe</ProfileName>
-        <URL>http://193.251.160.246/servlets/mms</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.0.0.10</ServAddr>
-          <Port>8082</Port>
-        </Proxy>
-        <PSparam>
-          <APN>orangewap</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Orange (647 00)</NetworkName>
-        <Editable>no</Editable>
-        <ProfileName>Orange World re</ProfileName>
-        <URL>http://wap.orange.re</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>orangerun</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Orange (647 00)</NetworkName>
-        <Editable>no</Editable>
-        <ProfileName>Orange MMS Réunion</ProfileName>
-        <URL>http://mms.orange.re/</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.10.200</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>orangerun.acte</APN>
-          <UserId>orange</UserId>
-          <Password>orange</Password>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Simplicime</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>WAP Simplicime</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.21.3</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>wapdebitel</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Simplicime</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>MMS Simplicime</ProfileName>
-        <URL>http://mmsdebitel</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.143.156.3</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>mmsdebitel</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Leclerc</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>WAP LeclercMobile</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.021.009</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>wap66</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Leclerc</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>MMS LeclercMobile</ProfileName>
-        <URL>http://mms66</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>10.143.156.9</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>mms66</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Digicel</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Digicel FR Web</ProfileName>
-        <URL>http://www.digicelive.fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>off</EnableFlag>
-        </Proxy>
-        <PSparam>
-          <APN>web.digicelfr.com</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Digicel</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Digicel FR MMS</ProfileName>
-        <URL>http://mmc.digicelfr.com/servlets/mms</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>172.20.6.12</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>wap.digicelfr.com</APN>
+          <APN>wap.vodafone.co.uk</APN>
           <UserId>wap</UserId>
           <Password>wap</Password>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>CORIOLIS</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Coriolis MMS</ProfileName>
-        <URL>http://mmscoriolis</URL>
+        <NetworkName>Vodafone PAYG</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Vodafone PAYG MMS</ProfileName>
+        <URL>http://mms.vodafone.co.uk/servlets/mms</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>10.143.156.6</ServAddr>
-          <Port>8080</Port>
+          <ServAddr>212.183.137.12</ServAddr>
+          <Port>8799</Port>
         </Proxy>
         <PSparam>
-          <APN>mmscoriolis</APN>
+          <APN>pp.vodafone.co.uk</APN>
+          <UserId>wap</UserId>
+          <Password>wap</Password>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>CORIOLIS</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Coriolis web</ProfileName>
-        <URL>http://wap.coriolis.com</URL>
+        <NetworkName>Vodafone PAYG</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Vodafone PAYG Internet</ProfileName>
+        <URL>http://wap.uk.samsungmobile.com/vodafone</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
         <PSparam>
-          <APN>fnetcoriolis</APN>
+          <APN>pp.vodafone.co.uk</APN>
+          <UserId>wap</UserId>
+          <Password>wap</Password>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>Keyyo Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Keyyo Mobile Wap</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
-        <Auth>normal</Auth>
-        <Protocol>http</Protocol>
-        <MTUSize>1500</MTUSize>
-        <Proxy>
-          <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.021.011</ServAddr>
-          <Port>8080</Port>
-        </Proxy>
-        <PSparam>
-          <APN>wap68</APN>
-        </PSparam>
-      </Profile>
-      <Profile>
-        <NetworkName>Keyyo Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Keyyo Mobile MMS</ProfileName>
-        <URL>http://mms68</URL>
+        <NetworkName>Talk Mobile Contract</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Talkmob MMS</ProfileName>
+        <URL>http://mms.talkmobile.co.uk/servlets/mms</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>010.143.156.011</ServAddr>
-          <Port>8080</Port>
+          <ServAddr>212.183.137.12</ServAddr>
+          <Port>8799</Port>
         </Proxy>
         <PSparam>
-          <APN>mms68</APN>
+          <APN>talkmobile.co.uk</APN>
+          <UserId>wap</UserId>
+          <Password>wap</Password>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>Keyyo Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Keyyo Mobile Internet</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
+        <NetworkName>Talk Mobile Contract</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Talkmob Internet</ProfileName>
+        <URL>http://wap.uk.samsungmobile.com/</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
@@ -1463,109 +504,519 @@
           <EnableFlag>off</EnableFlag>
         </Proxy>
         <PSparam>
-          <APN>internet68</APN>
+          <APN>talkmobile.co.uk</APN>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>La Poste Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>WEB La Poste Mobile</ProfileName>
-        <URL>http://m.samsung.com/fr</URL>
+        <NetworkName>Talk Mobile PAYG</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Talkmob PAYG MMS</ProfileName>
+        <URL>http://mms.talkmobile.co.uk/servlets/mms</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.021.003</ServAddr>
-          <Port>8080</Port>
+          <ServAddr>212.183.137.12</ServAddr>
+          <Port>8799</Port>
         </Proxy>
         <PSparam>
-          <APN>wapdebitel</APN>
+          <APN>payg.talkmobile.co.uk</APN>
+          <UserId>wap</UserId>
+          <Password>wap</Password>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>La Poste Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>MMS La Poste Mobile</ProfileName>
-        <URL>http://mmsdebitel</URL>
+        <NetworkName>Talk Mobile PAYG</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Talkmob PAYG Int</ProfileName>
+        <URL>http://wap.uk.samsungmobile.com/</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>payg.talkmobile.co.uk</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>O2 UK Pay Monthly</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>O2 Pay Monthly MMS</ProfileName>
+        <URL>http://mmsc.mms.o2.co.uk:8002</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>010.143.156.003</ServAddr>
+          <ServAddr>82.132.254.1</ServAddr>
           <Port>8080</Port>
         </Proxy>
         <PSparam>
-          <APN>mmsdebitel</APN>
+          <APN>wap.o2.co.uk</APN>
+          <UserId>o2wap</UserId>
+          <Password>password</Password>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>LTI telecom</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>wap12</ProfileName>
-        <URL>http://google.com</URL>
+        <NetworkName>O2 UK Pay Monthly</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>O2 Mobile Web</ProfileName>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>mobile.o2.co.uk</APN>
+          <UserId>o2web</UserId>
+          <Password>password</Password>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>O2 UK Pay &amp; Go</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>O2 Pay &amp; Go Internet</ProfileName>
+        <URL>http://wap.uk.samsungmobile.com/o2</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.021.015</ServAddr>
+          <ServAddr>82.132.254.1</ServAddr>
           <Port>8080</Port>
         </Proxy>
         <PSparam>
-          <APN>wap12</APN>
+          <APN>payandgo.o2.co.uk</APN>
+          <UserId>payandgo</UserId>
+          <Password>password</Password>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>LTI telecom</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>mms12</ProfileName>
-        <URL>http://mms12</URL>
+        <NetworkName>O2 UK Pay &amp; Go</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>O2 Pay &amp; Go MMS</ProfileName>
+        <URL>http://mmsc.mms.o2.co.uk:8002</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>010.143.156.015</ServAddr>
+          <ServAddr>82.132.254.1</ServAddr>
           <Port>8080</Port>
         </Proxy>
         <PSparam>
-          <APN>mms12</APN>
+          <APN>payandgo.o2.co.uk</APN>
+          <UserId>payandgo</UserId>
+          <Password>password</Password>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>Darty Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>Darty Surf&amp;Mail</ProfileName>
-        <URL>http://google.com</URL>
+        <NetworkName>Orange UK</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Orange UK Internet</ProfileName>
+        <URL>http://wap.uk.samsungmobile.com/orange</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>orangeinternet</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Orange UK</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Orange UK MMS</ProfileName>
+        <URL>http://mms.orange.co.uk/</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>192.168.021.011</ServAddr>
+          <ServAddr>192.168.224.10</ServAddr>
           <Port>8080</Port>
         </Proxy>
         <PSparam>
-          <APN>wap68</APN>
+          <APN>orangemms</APN>
         </PSparam>
       </Profile>
       <Profile>
-        <NetworkName>Darty Mobile</NetworkName>
-        <Editable>yes</Editable>
-        <ProfileName>DARTY MMS</ProfileName>
-        <URL>http://mms68</URL>
+        <NetworkName>T-Mobile</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>T-Mobile Internet</ProfileName>
+        <URL>http://wap.uk.samsungmobile.com/t-mobile</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>general.t-mobile.uk</APN>
+          <UserId>t-mobile</UserId>
+          <Password>tm</Password>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>T-Mobile</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>T-Mobile PictureMessage</ProfileName>
+        <URL>http://mmsc.t-mobile.co.uk:8002</URL>
         <Auth>normal</Auth>
         <Protocol>http</Protocol>
         <MTUSize>1500</MTUSize>
         <Proxy>
           <EnableFlag>on</EnableFlag>
-          <ServAddr>010.143.156.011</ServAddr>
+          <ServAddr>149.254.201.135</ServAddr>
           <Port>8080</Port>
         </Proxy>
         <PSparam>
-          <APN>mms68</APN>
+          <APN>general.t-mobile.uk</APN>
+          <UserId>t-mobile</UserId>
+          <Password>tm</Password>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Virgin</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Virgin Media Mobile Internet</ProfileName>
+        <URL>http://wap.uk.samsungmobile.com/virgin</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>goto.virginmobile.uk</APN>
+          <UserId>user</UserId>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Virgin</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>VM Picture messaging</ProfileName>
+        <URL>http://mms.virginmobile.co.uk:8002</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>193.30.166.2</ServAddr>
+          <Port>8080</Port>
+        </Proxy>
+        <PSparam>
+          <APN>goto.virginmobile.uk</APN>
+          <UserId>user</UserId>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>BT Mobile</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>BT Mobile MMS</ProfileName>
+        <URL>http://mms.bt.com/servlets/mms</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>212.183.137.12</ServAddr>
+          <Port>8799</Port>
+        </Proxy>
+        <PSparam>
+          <APN>btmobile.bt.com</APN>
+          <UserId>bt</UserId>
+          <Password>bt</Password>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>BT Mobile</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>BT Mobile Internet</ProfileName>
+        <URL>http://wap.uk.samsungmobile.com/btm</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>btmobile.bt.com</APN>
+          <UserId>bt</UserId>
+          <Password>bt</Password>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>TESCO</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>TESCO Mobile</ProfileName>
+        <URL>http://wap.uk.samsungmobile.com/tesco</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>193.113.200.195</ServAddr>
+          <Port>8080</Port>
+        </Proxy>
+        <PSparam>
+          <APN>prepay.tesco-mobile.com</APN>
+          <UserId>tescowap</UserId>
+          <Password>password</Password>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>TESCO</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>TESCO MMS</ProfileName>
+        <URL>http://mmsc.mms.o2.co.uk:8002</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>193.113.200.195</ServAddr>
+          <Port>8080</Port>
+        </Proxy>
+        <PSparam>
+          <APN>prepay.tesco-mobile.com</APN>
+          <UserId>tescowap</UserId>
+          <Password>password</Password>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Tesco Mobile Ireland</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Tesco Mobile Internet</ProfileName>
+        <URL>http://www.tescomobile.ie</URL>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>10.1.11.19</ServAddr>
+          <Port>8080</Port>
+        </Proxy>
+        <PSparam>
+          <APN>tescomobile.liffeytelecom.com</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Tesco Mobile Ireland</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Tesco MMS</ProfileName>
+        <URL>http://10.1.11.68/servlets/mms</URL>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>10.1.11.19</ServAddr>
+          <Port>8080</Port>
+        </Proxy>
+        <PSparam>
+          <APN>tescomobile.liffeytelecom.com</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Vodafone IE</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Vodafone IE Live!</ProfileName>
+        <URL>http://live.vodafone.com</URL>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>live.vodafone.com</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Vodafone IE</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Vodafone IE MMS</ProfileName>
+        <URL>http://www.vodafone.ie/mms</URL>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>10.24.59.200</ServAddr>
+          <Port>80</Port>
+        </Proxy>
+        <PSparam>
+          <APN>mms.vodafone.net</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>O2 IRL</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>O2.ie Mobile Internet</ProfileName>
+        <URL>http://m.o2.ie</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>internet</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>O2 IRL</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>O2.ie MMS</ProfileName>
+        <URL>http://mmsc.mms.o2.ie:8002</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>62.40.32.40</ServAddr>
+          <Port>8080</Port>
+        </Proxy>
+        <PSparam>
+          <APN>internet</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Meteor</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Meteor Data</ProfileName>
+        <URL>http://m.meteor.ie</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>data.mymeteor.ie</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Meteor</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Meteor MMS</ProfileName>
+        <URL>http://mms.mymeteor.ie</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>010.085.085.085</ServAddr>
+          <Port>8799</Port>
+        </Proxy>
+        <PSparam>
+          <APN>mms.mymeteor.ie</APN>
+          <UserId>my</UserId>
+          <Password>wap</Password>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>H3G</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>3 WAP</ProfileName>
+        <URL>http://mobile.three.co.uk/hb/HutchKey</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>off</EnableFlag>
+        </Proxy>
+        <PSparam>
+          <APN>three.co.uk</APN>
+          <UserId>user</UserId>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>H3G</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>3 MMS</ProfileName>
+        <URL>http://mms.um.three.co.uk:10021/mmsc</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>217.171.129.2</ServAddr>
+          <Port>8799</Port>
+        </Proxy>
+        <PSparam>
+          <APN>three.co.uk</APN>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Asda</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Asda WAP</ProfileName>
+        <URL>http://www.asda-mobile.com/wap</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>212.183.137.012</ServAddr>
+          <Port>8799</Port>
+        </Proxy>
+        <PSparam>
+          <APN>asdamobiles.co.uk</APN>
+          <UserId>wap</UserId>
+          <Password>wap</Password>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>Asda</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>Asda MMS</ProfileName>
+        <URL>http://mms.asdamobiles.co.uk/servlets/mms</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>212.183.137.012</ServAddr>
+          <Port>8799</Port>
+        </Proxy>
+        <PSparam>
+          <APN>asdamobiles.co.uk</APN>
+          <UserId>wap</UserId>
+          <Password>wap</Password>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>H3G IE</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>H3G IE WAP</ProfileName>
+        <URL>http://mobile.3ireland.ie/hb/HutchKey</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <PSparam>
+          <APN>3ireland.ie</APN>
+          <UserId>user</UserId>
+        </PSparam>
+      </Profile>
+      <Profile>
+        <NetworkName>H3G IE</NetworkName>
+        <Editable>no</Editable>
+        <ProfileName>H3G IE MMS</ProfileName>
+        <URL>http://mms.um.3ireland.ie:10021/mmsc</URL>
+        <Auth>normal</Auth>
+        <Protocol>http</Protocol>
+        <MTUSize>1500</MTUSize>
+        <Proxy>
+          <EnableFlag>on</EnableFlag>
+          <ServAddr>217.171.129.2</ServAddr>
+          <Port>8799</Port>
+        </Proxy>
+        <PSparam>
+          <APN>3ireland.ie</APN>
         </PSparam>
       </Profile>
     </Connections>

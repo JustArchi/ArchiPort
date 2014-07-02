@@ -1,3 +1,0 @@
-bg_BG-ak-cur.lite.res	19a18b4de20b41ea0c77a956289ab4f4	566778
-bg_BG.lang	2bfa9933ba95b947ac33afce5cadcd70	3815
-bg_BG-lk-text.lite.res	98040f7cd0cba0bfc8de520ce9be819f	3798963

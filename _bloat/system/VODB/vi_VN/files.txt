@@ -1,3 +1,0 @@
-vi_VN-ak-cur.lite.res	93dd91b00a3aa970f6cd287a51c86eb8	661026
-vi_VN.lang	a7858ae999d0595bed5364d116df7f90	3846
-vi_VN-lk-text.lite.res	ee7501f7588d98febaafa095a8bab689	3160184
